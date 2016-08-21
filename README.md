@@ -3,6 +3,7 @@
 本项目内容为Spring Boot教程程序样例。
 
 作者博客：http://blog.didispace.com
+GitHub：https://github.com/dyc87112
 
 - Spring Boot系列博文：http://blog.didispace.com/tag/spring-boot/
 - Spring Cloud系统博文：http://blog.didispace.com/tag/spring-cloud/
