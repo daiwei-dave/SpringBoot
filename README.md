@@ -4,7 +4,7 @@
 
 作者博客：http://blog.didispace.com
 
-- Spring Boot系列博文：http://blog.didispace.com/tag/spring-boot/
+- Spring Boot系列博文：http://blog.didispace.com/categories/Spring-Boot/
 - Spring Cloud系列博文：http://blog.didispace.com/tag/spring-cloud/
 - Spring Cloud中文社区：http://bbs.springcloud.com.cn/
 
