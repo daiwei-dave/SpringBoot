@@ -12,6 +12,8 @@
 
 如有问题，可联系：didi@potatomato.club
 
+ **注意：如果下面的链接无法访问，可看README.md获取链接，或者直接前往我的Github：https://github.com/dyc87112/SpringBoot-Learning** 
+
 ## 欢迎关注我的公众号
 
 ![输入图片说明](http://git.oschina.net/uploads/images/2017/0105/082137_85109d07_437188.jpeg "在这里输入图片标题")
