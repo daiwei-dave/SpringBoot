@@ -3,6 +3,7 @@
 本项目内容为Spring Boot教程程序样例。
 
 作者博客：http://blog.didispace.com
+作者GitHub：https://github.com/dyc87112/SpringBoot-Learning
 
 - Spring Boot系列博文：http://blog.didispace.com/categories/Spring-Boot/
 - Spring Cloud系列博文：http://blog.didispace.com/tag/spring-cloud/
@@ -11,8 +12,6 @@
 如您觉得该项目对您有用，欢迎点击右上方的**Star**按钮，给予支持！！
 
 如有问题，可联系：didi@potatomato.club
-
- **注意：如果下面的链接无法访问，可看README.md获取链接，或者直接前往我的Github：https://github.com/dyc87112/SpringBoot-Learning** 
 
 ## 欢迎关注我的公众号
 
@@ -24,6 +23,7 @@
 ### 快速入门
 
 - chapter1：[基本项目构建（可作为工程脚手架），引入web模块，完成一个简单的RESTful API](http://blog.didispace.com/spring-boot-learning-1/)
+- [使用Intellij中的Spring Initializr来快速构建Spring Boot/Cloud工程](http://blog.didispace.com/spring-initializr-in-intellij/)
 
 ### 工程配置
 
@@ -88,17 +88,14 @@
 ### 其他功能
 
 - chapter6-1-1：[使用Spring StateMachine框架实现状态机](http://blog.didispace.com/spring-statemachine/)
+- [Spring Boot Actuator监控端点小结](http://blog.didispace.com/spring-boot-actuator-1/)
+- [Spring Boot应用的后台运行配置](http://blog.didispace.com/spring-boot-run-backend/)
+- [Spring Boot自定义Banner](http://blog.didispace.com/spring-boot-banner/)
 
 ### Dubbo进行服务治理
 
 - chapter9-2-1：[Spring Boot中使用Dubbo进行服务治理]
 - chapter9-2-2：[Spring Boot与Dubbo中管理服务依赖]
-
-### 其他文章
-
-- [Spring Boot Actuator监控端点小结](http://blog.didispace.com/spring-boot-actuator-1/)
-- [Spring Boot应用的后台运行配置](http://blog.didispace.com/spring-boot-run-backend/)
-- [Spring Boot自定义Banner](http://blog.didispace.com/spring-boot-banner/)
 
 ### Spring Cloud构建微服务架构
 
