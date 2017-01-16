@@ -89,8 +89,10 @@
 
 - chapter6-1-1：[使用Spring StateMachine框架实现状态机](http://blog.didispace.com/spring-statemachine/)
 - [Spring Boot Actuator监控端点小结](http://blog.didispace.com/spring-boot-actuator-1/)
+- [在传统Spring应用中使用spring-boot-actuator模块提供监控端点](http://blog.didispace.com/spring-boot-actuator-without-boot/)
 - [Spring Boot应用的后台运行配置](http://blog.didispace.com/spring-boot-run-backend/)
 - [Spring Boot自定义Banner](http://blog.didispace.com/spring-boot-banner/)
+
 
 ### Dubbo进行服务治理
 
