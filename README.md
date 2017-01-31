@@ -3,6 +3,7 @@
 本项目内容为Spring Boot教程程序样例。
 
 作者博客：http://blog.didispace.com
+作者GitHub：https://github.com/dyc87112/SpringBoot-Learning
 
 - Spring Boot系列博文：http://blog.didispace.com/categories/Spring-Boot/
 - Spring Cloud系列博文：http://blog.didispace.com/tag/spring-cloud/
@@ -12,11 +13,17 @@
 
 如有问题，可联系：didi@potatomato.club
 
+## 欢迎关注我的公众号
+
+![输入图片说明](http://git.oschina.net/uploads/images/2017/0105/082137_85109d07_437188.jpeg "在这里输入图片标题")
+
+
 ##样例列表
 
 ### 快速入门
 
 - chapter1：[基本项目构建（可作为工程脚手架），引入web模块，完成一个简单的RESTful API](http://blog.didispace.com/spring-boot-learning-1/)
+- [使用Intellij中的Spring Initializr来快速构建Spring Boot/Cloud工程](http://blog.didispace.com/spring-initializr-in-intellij/)
 
 ### 工程配置
 
@@ -81,6 +88,11 @@
 ### 其他功能
 
 - chapter6-1-1：[使用Spring StateMachine框架实现状态机](http://blog.didispace.com/spring-statemachine/)
+- [Spring Boot Actuator监控端点小结](http://blog.didispace.com/spring-boot-actuator-1/)
+- [在传统Spring应用中使用spring-boot-actuator模块提供监控端点](http://blog.didispace.com/spring-boot-actuator-without-boot/)
+- [Spring Boot应用的后台运行配置](http://blog.didispace.com/spring-boot-run-backend/)
+- [Spring Boot自定义Banner](http://blog.didispace.com/spring-boot-banner/)
+
 
 ### Dubbo进行服务治理
 
