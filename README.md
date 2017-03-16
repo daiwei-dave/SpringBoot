@@ -39,8 +39,8 @@
 - chapter3-1-2：[使用Thymeleaf模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
 - chapter3-1-3：[使用Freemarker模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
 - chapter3-1-4：[使用Velocity模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
-- chapter3-1-5：[使用Swagger2构建RESTful API](http://blog.didispace.com/springbootswagger2/)
-- chapter3-1-6：[统一异常处理](http://blog.didispace.com/springbootexception/)
+- chapter3-1-5：[使用Swagger2构建RESTful API](http://blog.didispace.com/springbootswagger2/)(重点掌握)
+- chapter3-1-6：[统一异常处理](http://blog.didispace.com/springbootexception/)(重点掌握)
 
 ### 数据访问
 

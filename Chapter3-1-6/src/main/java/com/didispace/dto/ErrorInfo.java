@@ -1,5 +1,10 @@
 package com.didispace.dto;
 
+/**
+ * @Description 封装返回结果
+ * @author daiwei
+ * @param <T>
+ */
 public class ErrorInfo<T> {
 
     public static final Integer OK = 0;
