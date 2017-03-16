@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  *
- * @author 程序猿DD
+ * @author daiwei
  * @version 1.0.0
  * @blog http://blog.didispace.com
  *
@@ -17,12 +17,14 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value="/users")     // 通过这里配置使下面的映射都在/users下，可去除
 public class UserController {
 
+    //创建线程安全的Map
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
     @RequestMapping(value="/", method=RequestMethod.GET)
     public List<User> getUserList() {
         // 处理"/users/"的GET请求，用来获取用户列表
         // 还可以通过@RequestParam从页面中传递参数来进行查询条件或者翻页信息的传递
+        //users.values()返回此映射所包含的值的 Collection 视图。
         List<User> r = new ArrayList<User>(users.values());
         return r;
     }
