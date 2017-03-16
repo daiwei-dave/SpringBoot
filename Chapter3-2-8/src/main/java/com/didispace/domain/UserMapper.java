@@ -1,11 +1,13 @@
 package com.didispace.domain;
 
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
 
 @Mapper
+@Component
 public interface UserMapper {
 
     @Select("SELECT * FROM user WHERE name = #{name}")
