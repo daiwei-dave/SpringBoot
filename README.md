@@ -6,22 +6,6 @@
 
 本项目内容为Spring Boot教程程序样例。
 
-作者博客：http://blog.didispace.com
-作者GitHub：https://github.com/dyc87112/SpringBoot-Learning
-
-- Spring Boot系列博文：http://blog.didispace.com/categories/Spring-Boot/
-- Spring Cloud系列博文：http://blog.didispace.com/tag/spring-cloud/
-- Spring Cloud中文社区：http://bbs.springcloud.com.cn/
-
-如您觉得该项目对您有用，欢迎点击右上方的**Star**按钮，给予支持！！
-
-如有问题，可联系：didi@potatomato.club
-
-## 欢迎关注我的公众号
-
-![输入图片说明](http://git.oschina.net/uploads/images/2017/0105/082137_85109d07_437188.jpeg "在这里输入图片标题")
-
-
 ##样例列表
 
 ### 快速入门
@@ -115,13 +99,5 @@
 - chapter9-1-5：[Spring Cloud构建微服务架构（五）服务网关](http://blog.didispace.com/springcloud5/)
 - chapter9-1-6：[Spring Cloud构建微服务架构（六）集群监控]
 
-
-## 教程整理地址（时间不足，暂缓更新）
-
-http://blog.didispace.com/book/springboot/
-
-## 打赏支持
-
-<img src="http://git.oschina.net/uploads/images/2016/0717/085831_64f0a21e_437188.png" width="200px" height="200px;" /> <img src="http://git.oschina.net/uploads/images/2016/0717/085620_78f6b3cb_437188.png" width="200px" height="200px;" />
 
 
