@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author 程序猿DD
+ * @author daiwei
  * @version 1.0.0
  * @blog http://blog.didispace.com
  *
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class HelloController {
     
-    @ResponseBody
+
     @RequestMapping("/hello")
     public String hello() {
         return "Hello World";

@@ -9,12 +9,16 @@
         <module name="Chapter1" />
         <module name="Chapter2-1-1" />
         <module name="Chapter3-1-1" />
+        <module name="Chapter3-1-2" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="Chapter1" target="1.7" />
       <module name="Chapter2-1-1" target="1.7" />
       <module name="Chapter3-1-1" target="1.7" />
+      <module name="Chapter3-1-2" target="1.7" />
+      <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
