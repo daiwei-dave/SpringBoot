@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
  * @date 16/3/26 下午9:11.
  * @blog http://blog.didispace.com
  */
+@Component
 @Configuration
 public class DataSourceConfig {
 

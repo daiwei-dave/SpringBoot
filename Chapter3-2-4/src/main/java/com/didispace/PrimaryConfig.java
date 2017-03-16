@@ -25,7 +25,8 @@ import java.util.Map;
         basePackages= { "com.didispace.domain.p" }) //设置Repository所在位置
 public class PrimaryConfig {
 
-    @Autowired @Qualifier("primaryDataSource")
+    @Autowired
+    @Qualifier("primaryDataSource")
     private DataSource primaryDataSource;
 
     @Primary
