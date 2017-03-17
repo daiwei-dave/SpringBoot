@@ -8,6 +8,9 @@
 
 ##样例列表
 
+##1.集成web，数据访问，事务管理为基础部分，必须掌握
+##2.安全控制，缓存为优化部分
+
 ### 快速入门
 
 - chapter1：[基本项目构建（可作为工程脚手架），引入web模块，完成一个简单的RESTful API](http://blog.didispace.com/spring-boot-learning-1/)

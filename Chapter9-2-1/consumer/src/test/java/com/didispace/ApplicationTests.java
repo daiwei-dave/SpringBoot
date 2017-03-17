@@ -19,6 +19,7 @@ public class ApplicationTests {
 	@Test
 	public void testAdd() throws Exception {
 		Assert.assertEquals("compute-service:add", new Integer(3), computeService.add(1, 2));
+		System.out.println(computeService.add(1, 2));
 	}
 
 }
