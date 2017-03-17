@@ -40,8 +40,8 @@ public class ApplicationTests {
 		// 测试findByName, 查询姓名为FFF的User
 		Assert.assertEquals(60, userRepository.findByName("FFF").getAge().longValue());
 
-		// 测试findUser, 查询姓名为FFF的User
-		Assert.assertEquals(60, userRepository.findUser("FFF").getAge().longValue());
+//		// 测试findUser, 查询姓名为FFF的User
+//		Assert.assertEquals(60, userRepository.findUser("FFF").getAge().longValue());
 
 		// 测试findByNameAndAge, 查询姓名为FFF并且年龄为60的User
 		Assert.assertEquals("FFF", userRepository.findByNameAndAge("FFF", 60).getName());
