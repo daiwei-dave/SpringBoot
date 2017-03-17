@@ -20,6 +20,9 @@
         <option value="$PROJECT_DIR$/Chapter3-3-1/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter9-2-1/compute-service/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter9-2-1/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter9-2-2/compute-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Chapter9-2-2/consumer/pom.xml" />
       </list>
     </option>
   </component>

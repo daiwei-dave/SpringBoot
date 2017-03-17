@@ -1,8 +1,9 @@
-#SpringBoot-Learning
 
 
-版权归http://blog.didispace.com的博主所有，我只是参考拿来学习
-其中的部分代码做了些更改
+
+版权归http://blog.didispace.com的博主所有
+
+我只是参考拿来学习,其中的部分代码做了些更改
 
 本项目内容为Spring Boot教程程序样例。
 
@@ -88,8 +89,8 @@
 
 ### Dubbo进行服务治理
 
-- chapter9-2-1：[Spring Boot中使用Dubbo进行服务治理]
-- chapter9-2-2：[Spring Boot与Dubbo中管理服务依赖]
+- chapter9-2-1：[Spring Boot中使用Dubbo进行服务治理] (重点掌握)
+- chapter9-2-2：[Spring Boot与Dubbo中管理服务依赖]( (重点掌握)
 
 ### Spring Cloud构建微服务架构
 

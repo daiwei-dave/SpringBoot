@@ -17,8 +17,12 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter3-3-1/Chapter3-3-1.iml" filepath="$PROJECT_DIR$/Chapter3-3-1/Chapter3-3-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-Learning.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-Learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" filepath="$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-service (1).iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" filepath="$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-3/demo.iml" filepath="$PROJECT_DIR$/Chapter3-1-3/demo.iml" />
     </modules>
   </component>

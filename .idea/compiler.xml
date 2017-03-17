@@ -19,8 +19,11 @@
         <module name="Chapter3-2-7" />
         <module name="Chapter3-2-8" />
         <module name="Chapter3-3-1" />
+        <module name="compute-api" />
+        <module name="compute-api-server" />
         <module name="compute-service" />
         <module name="consumer" />
+        <module name="consumer (1)" />
         <module name="demo" />
         <module name="SpringBootWithSwagger" />
       </profile>
@@ -39,8 +42,12 @@
       <module name="Chapter3-2-7" target="1.8" />
       <module name="Chapter3-2-8" target="1.7" />
       <module name="Chapter3-3-1" target="1.7" />
+      <module name="compute-api" target="1.7" />
+      <module name="compute-api-server" target="1.7" />
       <module name="compute-service" target="1.7" />
+      <module name="compute-service (1)" target="1.7" />
       <module name="consumer" target="1.7" />
+      <module name="consumer (1)" target="1.7" />
       <module name="demo" target="1.8" />
       <module name="SpringBootWithSwagger" target="1.7" />
     </bytecodeTargetLevel>
