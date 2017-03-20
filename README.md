@@ -3,13 +3,15 @@
 
 版权归http://blog.didispace.com的博主所有
 
+代码引用自https://git.oschina.net/didispace/SpringBoot-Learning
+
 我只是参考拿来学习,其中的部分代码做了些更改
 
 本项目内容为Spring Boot教程程序样例。
 
 ##样例列表
 
-##1.集成web，数据访问，事务管理为基础部分，必须掌握
+##1.集成web，数据访问，事务管理，日志管理为基础部分，必须掌握
 ##2.安全控制，缓存为优化部分
 
 ### 快速入门
