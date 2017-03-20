@@ -1,0 +1,7 @@
+2017-03-20 14:17:58,400  INFO ApplicationTests:48 ---- Starting ApplicationTests on DESKTOP-I7PVE02 with PID 40264 (G:\SpringBoot-Learning\Chapter4-2-2\target\test-classes started by daiwei in G:\SpringBoot-Learning\Chapter4-2-2)
+2017-03-20 14:17:58,400 DEBUG ApplicationTests:51 ---- Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-03-20 14:17:58,400  INFO ApplicationTests:666 ---- No active profile set, falling back to default profiles: default
+2017-03-20 14:17:59,497  INFO ApplicationTests:57 ---- Started ApplicationTests in 1.511 seconds (JVM running for 3.394)
+2017-03-20 14:17:59,497  INFO ApplicationTests:18 ---- 输出info
+2017-03-20 14:17:59,497 DEBUG ApplicationTests:19 ---- 输出debug
+2017-03-20 14:17:59,497 ERROR ApplicationTests:20 ---- 输出error
