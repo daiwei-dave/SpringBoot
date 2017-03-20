@@ -1,0 +1,11 @@
+2017-03-20 16:17:44,670  INFO Application:48 ---- Starting Application on DESKTOP-I7PVE02 with PID 43060 (G:\SpringBoot-Learning\Chapter4-2-4\target\classes started by daiwei in G:\SpringBoot-Learning)
+2017-03-20 16:17:44,670 DEBUG Application:51 ---- Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2017-03-20 16:17:44,670  INFO Application:666 ---- No active profile set, falling back to default profiles: default
+2017-03-20 16:17:48,661  INFO Application:57 ---- Started Application in 4.683 seconds (JVM running for 5.315)
+2017-03-20 16:19:40,189  INFO WebLogAspect:50 ---- URL : http://localhost:8080/hello
+2017-03-20 16:20:47,158  INFO WebLogAspect:51 ---- HTTP_METHOD : GET
+2017-03-20 16:20:53,493  INFO WebLogAspect:52 ---- IP : 0:0:0:0:0:0:0:1
+2017-03-20 16:20:57,577  INFO WebLogAspect:53 ---- CLASS_METHOD : com.didispace.web.HelloController.hello
+2017-03-20 16:21:24,563  INFO WebLogAspect:54 ---- ARGS : [didi]
+2017-03-20 16:22:35,107  INFO WebLogAspect:61 ---- RESPONSE : Hello didi
+2017-03-20 16:22:51,551  INFO WebLogAspect:62 ---- SPEND TIME : 212272
