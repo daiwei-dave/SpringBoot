@@ -1,0 +1,2 @@
+
+使用spring注解和ehcache进行缓存

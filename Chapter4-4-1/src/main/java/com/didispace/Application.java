@@ -11,7 +11,7 @@ import org.springframework.cache.annotation.EnableCaching;
  * @blog http://blog.didispace.com
  */
 @SpringBootApplication
-@EnableCaching
+@EnableCaching  //开启缓存功能
 public class Application {
 
 	public static void main(String[] args) {

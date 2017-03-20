@@ -8,7 +8,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -43,6 +42,7 @@ public class ApplicationTests {
 
 		u1.setAge(20);
 		userRepository.save(u1);
+		System.out.println("准备第三次查询");
 		User u3 = userRepository.findByName("AAA");
 		System.out.println("第三次查询：" + u3.getAge());
 

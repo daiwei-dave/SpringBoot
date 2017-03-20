@@ -15,8 +15,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 @CacheConfig(cacheNames = "users")
 public interface UserRepository extends JpaRepository<User, Long> {
-
-    @Cacheable(key = "#p0", condition = "#p0.length() < 10")
+    /**
+     * @Cacheable(key = "#p0", condition = "#p0.length() < 3")，表示只有当第一个参数的长度小于10的时候才会被缓存
+     * @param name
+     * @return
+     */
+    @Cacheable(key = "#p0", condition = "#p0.length() < 4")
     User findByName(String name);
 
 }
