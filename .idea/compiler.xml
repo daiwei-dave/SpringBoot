@@ -30,6 +30,7 @@
         <module name="consumer" />
         <module name="consumer (1)" />
         <module name="demo" />
+        <module name="demo (1)" />
         <module name="SpringBootWithSwagger" />
       </profile>
     </annotationProcessing>
@@ -59,6 +60,7 @@
       <module name="consumer" target="1.7" />
       <module name="consumer (1)" target="1.7" />
       <module name="demo" target="1.8" />
+      <module name="demo (1)" target="1.8" />
       <module name="SpringBootWithSwagger" target="1.7" />
     </bytecodeTargetLevel>
   </component>

@@ -37,8 +37,8 @@
 - chapter3-2-3：[多数据源配置（一）：JdbcTemplate](http://blog.didispace.com/springbootmultidatasource/)
 - chapter3-2-4：[多数据源配置（二）：Spring-data-jpa](http://blog.didispace.com/springbootmultidatasource/)
 - chapter3-2-5：[使用NoSQL数据库（一）：Redis](http://blog.didispace.com/springbootredis/)
-- chapter3-2-6：[使用NoSQL数据库（二）：MongoDB](http://blog.didispace.com/springbootmongodb/)
-- chapter3-2-7：[整合MyBatis](http://blog.didispace.com/springbootmybatis/)
+- chapter3-2-6：[使用NoSQL数据库（二）：MongoDB](http://blog.didispace.com/springbootmongodb/)(还未看)
+- chapter3-2-7：[整合MyBatis](http://blog.didispace.com/springbootmybatis/)(重点掌握)
 - chapter3-2-8：[MyBatis注解配置详解](http://blog.didispace.com/mybatisinfo/)(重点掌握)
 
 ### 事务管理
@@ -47,8 +47,8 @@
 - chapter3-3-2：[分布式事务（未完成）]
 
 ### 其他内容
-- chapter4-1-1：[使用@Scheduled创建定时任务](http://blog.didispace.com/springbootscheduled/)
-- chapter4-1-2：[使用@Async实现异步调用](http://blog.didispace.com/springbootasync/)
+- chapter4-1-1：[使用@Scheduled创建定时任务](http://blog.didispace.com/springbootscheduled/)(还未看)
+- chapter4-1-2：[使用@Async实现异步调用](http://blog.didispace.com/springbootasync/)(还未看)
 
 #### 日志管理
 
@@ -61,24 +61,24 @@
 (重点掌握)
 #### 安全管理
 
-- chapter4-3-1：[使用Spring Security](http://blog.didispace.com/springbootsecurity/)
+- chapter4-3-1：[使用Spring Security](http://blog.didispace.com/springbootsecurity/)(还未看)
 - chapter4-3-2：[使用Spring Session（未完成）]
 
 #### 缓存支持
 
-- chapter4-4-1：[注解配置与EhCache使用](http://blog.didispace.com/springbootcache1/)
-- chapter4-4-2：[使用Redis做集中式缓存](http://blog.didispace.com/springbootcache2/)
+- chapter4-4-1：[注解配置与EhCache使用](http://blog.didispace.com/springbootcache1/)(还未看)
+- chapter4-4-2：[使用Redis做集中式缓存](http://blog.didispace.com/springbootcache2/)(还未看)
 
 #### 邮件发送
 
-- chapter4-5-1：[实现邮件发送：简单邮件、附件邮件、嵌入资源的邮件、模板邮件](http://blog.didispace.com/springbootmailsender/)
+- chapter4-5-1：[实现邮件发送：简单邮件、附件邮件、嵌入资源的邮件、模板邮件](http://blog.didispace.com/springbootmailsender/)(还未看)
 
 ### 消息服务
 
-- chapter5-1-1：[JMS（未完成）]
-- chapter5-2-1：[Spring Boot中使用RabbitMQ](http://blog.didispace.com/spring-boot-rabbitmq/)
+- chapter5-1-1：[JMS（未完成）](还未看)
+- chapter5-2-1：[Spring Boot中使用RabbitMQ](http://blog.didispace.com/spring-boot-rabbitmq/)(还未看)
 
-### 其他功能
+### 其他功能(还未看)
 
 - chapter6-1-1：[使用Spring StateMachine框架实现状态机](http://blog.didispace.com/spring-statemachine/)
 - [Spring Boot Actuator监控端点小结](http://blog.didispace.com/spring-boot-actuator-1/)
@@ -92,7 +92,7 @@
 - chapter9-2-1：[Spring Boot中使用Dubbo进行服务治理] (重点掌握)
 - chapter9-2-2：[Spring Boot与Dubbo中管理服务依赖]( (重点掌握)
 
-### Spring Cloud构建微服务架构
+### Spring Cloud构建微服务架构(还未看)
 
 由于Spring Cloud偏宏观架构，Spring Boot偏微观细节，内容上越来越多，为了两部分内容不互相干扰，所以迁移Spring Cloud内容到：[SpringCloud-Learning项目](http://git.oschina.net/didispace/SpringCloud-Learning)，该项目将不再更新Spring Cloud内容，关注Spring Cloud内容的请移步至[SpringCloud-Learning项目](http://git.oschina.net/didispace/SpringCloud-Learning)
 
