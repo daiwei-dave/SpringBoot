@@ -31,8 +31,8 @@ public class ApplicationTests {
 	public void sendSimpleMail() throws Exception {
 
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("dyc87112@qq.com");
-		message.setTo("dyc87112@qq.com");
+		message.setFrom("18428385839@163.com");
+		message.setTo("2368804558@qq.com");
 		message.setSubject("主题：简单邮件");
 		message.setText("测试邮件内容");
 
@@ -45,8 +45,8 @@ public class ApplicationTests {
 		MimeMessage mimeMessage = mailSender.createMimeMessage();
 
 		MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
-		helper.setFrom("dyc87112@qq.com");
-		helper.setTo("dyc87112@qq.com");
+		helper.setFrom("18428385839@163.com");
+		helper.setTo("2368804558@qq.com");
 		helper.setSubject("主题：有附件");
 		helper.setText("有附件的邮件");
 
@@ -63,8 +63,8 @@ public class ApplicationTests {
 		MimeMessage mimeMessage = mailSender.createMimeMessage();
 
 		MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
-		helper.setFrom("dyc87112@qq.com");
-		helper.setTo("dyc87112@qq.com");
+		helper.setFrom("18428385839@163.com");
+		helper.setTo("2368804558@qq.com");
 		helper.setSubject("主题：嵌入静态资源");
 		helper.setText("<html><body><img src=\"cid:weixin\" ></body></html>", true);
 
