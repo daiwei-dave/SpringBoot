@@ -25,6 +25,7 @@
         <module name="Chapter4-2-3" />
         <module name="Chapter4-2-4" />
         <module name="Chapter4-4-1" />
+        <module name="Chapter4-4-2" />
         <module name="compute-api" />
         <module name="compute-api-server" />
         <module name="compute-service" />
@@ -55,6 +56,7 @@
       <module name="Chapter4-2-3" target="1.8" />
       <module name="Chapter4-2-4" target="1.7" />
       <module name="Chapter4-4-1" target="1.7" />
+      <module name="Chapter4-4-2" target="1.7" />
       <module name="compute-api" target="1.7" />
       <module name="compute-api-server" target="1.7" />
       <module name="compute-service" target="1.7" />

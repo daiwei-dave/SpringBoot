@@ -7,7 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 /**
- * @author 程序猿DD
+ * 通过@CachePut来让数据更新操作同步到缓存中
+ * @author daiwei
  * @version 1.0.0
  * @date 16/3/23 下午2:34.
  * @blog http://blog.didispace.com
