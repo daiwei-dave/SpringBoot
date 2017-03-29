@@ -73,12 +73,12 @@
 
 #### 邮件发送
 
-- chapter4-5-1：[实现邮件发送：简单邮件、附件邮件、嵌入资源的邮件、模板邮件](http://blog.didispace.com/springbootmailsender/)(还未看)
+- chapter4-5-1：[实现邮件发送：简单邮件、附件邮件、嵌入资源的邮件、模板邮件](http://blog.didispace.com/springbootmailsender/)
 
 ### 消息服务
 
 - chapter5-1-1：[JMS（未完成）](还未看)
-- chapter5-2-1：[Spring Boot中使用RabbitMQ](http://blog.didispace.com/spring-boot-rabbitmq/)(还未看)
+- chapter5-2-1：[Spring Boot中使用RabbitMQ](http://blog.didispace.com/spring-boot-rabbitmq/)
 
 ### 其他功能(还未看)
 

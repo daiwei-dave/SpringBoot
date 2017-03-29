@@ -34,6 +34,7 @@
         <module name="consumer (1)" />
         <module name="demo" />
         <module name="demo (1)" />
+        <module name="rabbitmq-hello" />
         <module name="SpringBootWithSwagger" />
       </profile>
     </annotationProcessing>
@@ -67,6 +68,7 @@
       <module name="consumer (1)" target="1.7" />
       <module name="demo" target="1.8" />
       <module name="demo (1)" target="1.8" />
+      <module name="rabbitmq-hello" target="1.7" />
       <module name="SpringBootWithSwagger" target="1.7" />
     </bytecodeTargetLevel>
   </component>
