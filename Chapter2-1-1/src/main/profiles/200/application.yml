@@ -1,0 +1,10 @@
+
+ftp:
+  ip: 10.122.249.15
+  port: 21
+  userName: yf
+  userPwd: yf
+
+myProps:
+   simpleProp: hahah
+   arrayProps: 1,2,3,4,5

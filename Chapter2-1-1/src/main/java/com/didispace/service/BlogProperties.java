@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author 程序猿DD
+ * @Description  springBoot读取application.properties中的参数
  * @version 1.0.0
  * @date 16/5/5 下午12:16.
  * @blog http://blog.didispace.com
