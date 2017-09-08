@@ -8,3 +8,15 @@ ftp:
 myProps:
    simpleProp: hahah
    arrayProps: 1,2,3,4,5
+   mapProps:
+    key1: value1
+    key2: value2
+   listProp2:
+    - config2Value1
+    - config2Vavlue2
+   listProp1:
+    - name: abc
+      value: abcValue
+    - name: efg
+      value: efgValue
+
