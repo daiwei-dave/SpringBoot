@@ -21,7 +21,7 @@
 
 ### 工程配置
 
-- chapter2-1-1：[配置文件详解：自定义属性、随机数、多环境配置等](http://blog.didispace.com/springbootproperties/)
+- chapter2-1-1：[配置文件详解：自定义属性、随机数、多环境配置等](http://blog.didispace.com/springbootproperties/)(重点掌握)
 
 ### Web开发
 
@@ -49,7 +49,7 @@
 - chapter3-3-2：[分布式事务（未完成）]
 
 ### 其他内容
-- chapter4-1-1：[使用@Scheduled创建定时任务](http://blog.didispace.com/springbootscheduled/)(还未看)
+- chapter4-1-1：[使用@Scheduled创建定时任务](http://blog.didispace.com/springbootscheduled/)
 - chapter4-1-2：[使用@Async实现异步调用](http://blog.didispace.com/springbootasync/)(还未看)
 
 #### 日志管理
