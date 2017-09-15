@@ -2,6 +2,7 @@ package com.didispace;
 
 import com.didispace.domain.User;
 import com.didispace.domain.UserRepository;
+import com.didispace.util.CacheUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +26,9 @@ public class ApplicationTests {
 
 	@Autowired
 	private CacheManager cacheManager;
+
+	@Autowired
+	private CacheUtil cacheUtil;
 
 	@Before
 	public void before() {
