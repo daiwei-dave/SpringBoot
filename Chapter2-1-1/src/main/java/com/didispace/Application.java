@@ -1,7 +1,10 @@
 package com.didispace;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 
 /**
  *
@@ -11,7 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class Application {
+public class Application implements EmbeddedServletContainerCustomizer {
+
+	private static Integer SERVER_PORT=8082;
+
 
 	/**
 	 * 我们的main方法通过调用run， 将业务委托给了Spring Boot的SpringApplication类。
@@ -28,8 +34,17 @@ public class Application {
 	public static void main(String[] args){
 		SpringApplication app = new SpringApplication(Application.class);
 		//不展示springBoot旗帜
-		app.setShowBanner(false);
+		app.setBannerMode(Banner.Mode.OFF);
 		app.run(args);
+	}
+
+
+	/**
+	 * 设置tomcat的端口
+	 * @param container
+	 */
+	public void customize(ConfigurableEmbeddedServletContainer container) {
+		container.setPort(SERVER_PORT);
 	}
 
 }
