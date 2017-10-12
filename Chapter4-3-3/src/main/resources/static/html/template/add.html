@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <script src="../../js/jquery-1.11.3.js" type="text/javascript"></script>
+
+</head>
+<body>
+<table>
+    <tr>
+        <td>请求地址</td>
+        <td><input style="width: 300px" name="url" value="/performanceTemplate/add"></td>
+    </tr>
+    <tr>
+        <td>请求方式</td>
+        <td>
+            <select name="method">
+                <option value="get">GET</option>
+                <option value="post" selected="true">POST</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Content-Type</td>
+        <td>
+            <select name="contentType">
+                <option value="application/x-www-form-urlencoded" >application/x-www-form-urlencoded</option>
+                <option value="application/json" selected>application/json</option>
+            </select>
+        </td>
+    </tr>
+    <tr style="height: 100px">
+        <td>请求数据</td>
+        <td>
+            <textarea name="data" style="margin: 0px; height: 212px; width: 552px;">
+                {
+                   "name":"模板测试1111",
+                   "targetTypes":[
+                    {"id":1, "name":"关键绩效类","targetOrder":1},
+                    {"id":2, "name":"重点工作类","targetOrder":2},
+                    {"id":3,"name":"专项","targetOrder":3},
+                    {"id":4,"name":"扣减项","targetOrder":4},
+                    {"name":"自定义项1111","targetOrder":5}
+                   ],
+                    "dimensions":[
+                      {"id":3,"name":"指标名称","dimensionOrder":3},
+                      {"id":4,"name":"指标权重","dimensionOrder":4},
+                      {"id":5,"name":"业绩指标/重点工作内容", "dimensionOrder":5},
+                      {"id":6,"name":"目标值","dimensionOrder":6},
+                      {"id":7,"name":"评分标准", "dimensionOrder":7},
+                      {"id":8,"name":"实际完成情况","dimensionOrder":8},
+                      {"id":12,"name":"信息来源","dimensionOrder":12},
+                      {"id":13,"name":"评价公式","dimensionOrder":13},
+                      {"id":14,"name":"备注","dimensionOrder":14},
+                      {"name":"自定义维度1111","dimensionOrder":15}
+                   ]
+                }
+            </textarea>
+        </td>
+        <td><input id="send" type="button" name="发送" value="发送"></td>
+    </tr>
+</table>
+<hr>
+<textarea id="response" style=" height: 230px; width: 674px;">
+
+</textarea>
+<script src="../../js/common.js" type="text/javascript"></script>
+</body>
+</html>

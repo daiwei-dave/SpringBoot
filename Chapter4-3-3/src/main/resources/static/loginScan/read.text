@@ -1,0 +1,21 @@
+/**
+* @ $.loginScan()              基于jquery扩展的扫码登录插件,实例化，参数如下 
+* @ $.loginScan().switchPage() 插件的显示与隐藏
+* @ param "el"                 挂在父元素,默认body,(id: "#id")
+* @ param "isShow"             初始化时当前是否显示（true/false），默认false
+* @ param "style"              当前扫码登录的样式, "style.xx"
+* @ param "style.width"        插件宽度，字符类型（px，%）
+* @ param "style.height"       插件高度，字符类型（px，%）
+* @ param "style.backgroundColor"插件高度，字符类型（px，%）
+* @ param "message"            盒子内部显示的内容，对象如下"message.xx"
+* @ param "message.switchBtn"  顶部切换板块的内容，字符类型
+* @ param "message.title"      头部标题板块的内容，字符类型
+* @ param "message.tip"        底部提示板块的内容，字符类型
+* @ param "urlData"            请求类型对象，对象如下urlData.xx"
+* @ param "urlData.url"        第三方应用获取二维码图片的信息-id的请求地址
+* @ param "urlData.imgUrl"     第三方应用获取二维码图片信息，可选择性告诉服务器指定跳转页面的地址
+* @ param "urlData.checkurl"   第三方应用（前端）检查是否已通过认证的请求地址
+* @ param "urlData.data"       请求参数{appKey:"第三方应用的标识", redirectUrl:"登录成功后的跳转页面地址"}
+* @ param "success"            登录成功后的回调函数，参数data为标示符code
+* @ param "switchCallback"     点击切换时的回调函数
+**/

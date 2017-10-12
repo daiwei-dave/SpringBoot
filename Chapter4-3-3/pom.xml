@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dw</groupId>
+  <artifactId>springboot-shiro</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>springboot-shiro Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+
+
+  <properties>
+    <!--基础框架包、工具类包-->
+    <gome.commons.version>1.0.2-SNAPSHOT</gome.commons.version>
+    <gome.framework.version>1.0.0-SNAPSHOT</gome.framework.version>
+    <java.version>1.7</java.version>
+    <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+    <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+    <org.mybatis.generator.version>1.3.2</org.mybatis.generator.version>
+    <mybatis.version>3.2.6</mybatis.version>
+    <mybatis-spring.version>1.3.0</mybatis-spring.version>
+    <mybatise.pagehelper.version>3.6.0</mybatise.pagehelper.version>
+    <redis.version>2.8.0</redis.version>
+    <shiro.version>1.2.5</shiro.version>
+    <com.alibaba.druid.version>1.0.26</com.alibaba.druid.version>
+    <profiles.dir>src/main/profiles</profiles.dir>
+    <poi.version>3.16</poi.version>
+  </properties>
+
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.3.2.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!--boot-web-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+
+
+    <!--shiro-->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-web</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+
+
+    <!--mybatise-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>${mybatis.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>${mybatis-spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>${mybatise.pagehelper.version}</version>
+    </dependency>
+
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>springboot-shiro</finalName>
+  </build>
+</project>

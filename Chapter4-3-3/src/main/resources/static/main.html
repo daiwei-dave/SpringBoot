@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <script src="/js/jquery-1.11.3.js" type="text/javascript"></script>
+</head>
+<body>
+<input id="logout" type="button" name="登出" value="登出">
+
+
+<a href="./commonTest.html">通用测试</a>
+<hr>
+<a href="./html/modifyPwd.html">修改密码</a>
+<a href="./html/getLoginedUser.html">获取登录用户信息</a>
+<a href="./html/queryLoginedUserMenus.html">获取登录用户菜单</a>
+<hr>
+<a href="./html/user/user.html">用户管理->管理员</a>
+<hr>
+<a href="./html/plate/plate.html">板块管理->管理员</a>
+<hr>
+<a href="./html/company/company.html">公司管理->管理员</a>
+<hr>
+<a href="./html/authority/authority.html">权限管理->管理员</a>
+<hr>
+<a href="./html/template/template.html">模板管理->管理员</a>
+<hr>
+<a href="./html/evaluationStandard/evaluationStandard.html">评价标准->管理员</a>
+<hr>
+<a href="./html/performanceRange/performanceRange.html">人员信息录入->绩效管理员</a>
+<hr>
+<a href="./html/performance/performance.html">绩效考核->绩效管理员</a>
+<hr>
+<a href="./html/performanceAudit/performanceAudit.html">绩效考核审批->审批用户</a>
+<hr>
+<a href="./html/plateHeader/plateHeader.html">版块负责人考核->集团绩效管理员</a>
+<hr>
+<a href="./html/file/file.html">文件上传
+</a>
+
+<script type="text/javascript">
+    $(function () {
+        $("#logout").click(function () {
+            $.ajax({
+                url:"./logout",
+                type: "GET",
+                dataType: 'json',
+                data: {},
+                success: function (data, textStatus, jqXHR) {
+                    if (data.code == '0') {
+                        window.location.href="./index.html";
+                    } else {
+                        alert(data.message);
+                    }
+                }
+            });
+        })
+    })
+
+
+</script>
+</body>
+
+</html>

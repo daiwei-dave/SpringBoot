@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <script src="./js/jquery-1.11.3.js" type="text/javascript"></script>
+</head>
+<body>
+<form id="loginForm" name="login" method="post" action="imgvrifyControllerDefaultKaptcha">
+    用户名:<input name="username" value="gxl160329"><br>
+    密码:<input name="password" value="123456"><br>
+    验证码: <input type="text" name="vrifyCode" /> <img alt="验证码" onclick = "this.src='/defaultKaptcha?d='+new Date()*1" src="/defaultKaptcha" /><br>
+    记住我<input type="checkbox" name="rememberMe"><br>
+    <input id="login" type="button" name="登录" value="登录">
+    <a href="loginQR.html">切换到扫码登陆</a>
+</form>
+<script type="text/javascript">
+    $(function () {
+        $("#login").click(function () {
+            $.ajax({
+                url:"./login",
+                type: "post",
+                dataType: 'json',
+                data: $("#loginForm").serialize(),
+                success: function (data, textStatus, jqXHR) {
+                    if (data.code == '0') {
+                        window.location.href="./main.html";
+                    } else {
+                        alert(data.message);
+                        //刷新页面
+                        window.location.reload();
+                    }
+                }
+            });
+        })
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/loginScan.css"/>
+    <style>
+        #box {
+          width:300px;
+          margin:50px auto  
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/loginScan.js"></script>
+<script>
+    //sso测试地址为http://sso.gome.work
+    var basePath = "http://sso.gome.work";
+    // 初始化
+    var login = $.loginScan({
+        el: "#box",     // 挂着元素
+        isShow: true,   // 是否显示
+        style: {        // 样式
+            width:"100%"
+        },
+        message: {      // 内容
+            
+        },
+        urlData: {      // 请求及参数
+            url: basePath+"/api/get_qr_id",     //第三方应用获取二维码图片的信息-id
+            imgUrl: basePath+"/api/get_qr",     //第三方应用获取二维码图片信息，可选择性告诉服务器指定跳转页面的地址
+            checkurl: basePath+"/api/check_qr", //第三方应用（前端）检查是否已通过认证
+            data: {
+                appKey: "0001",                 // 第三方应用的标识，测试环境appKey为0001
+                redirectUrl:""                  //登录成功后的跳转页面地址
+            }
+        },
+        success: function(data){ //登录成功后的回调函数，参数data为标示符code，
+            window.location.href="/scanCodeLogin?code="+data;
+        },
+        switchCallback: function(){ // 点击切换时的回调函数
+            window.location.href="/index.html";
+        }
+    });
+
+</script>
+</html>
+
+
+
+  

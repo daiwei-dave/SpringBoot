@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Chapter4-3-3:war exploded">
+    <output-path>$PROJECT_DIR$/Chapter4-3-3/target/springboot-shiro</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springboot-shiro" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Chapter4-3-3/target/springboot-shiro/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="springboot-shiro/web/Web" />
+    </root>
+  </artifact>
+</component>
