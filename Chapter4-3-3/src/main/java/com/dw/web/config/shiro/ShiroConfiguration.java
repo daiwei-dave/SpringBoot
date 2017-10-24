@@ -68,20 +68,28 @@ public class ShiroConfiguration {
 //        return cacheManager;
 //    }
 
-//    @Bean
-//    public RedisSessionRepository sessionRepository() {
-//        RedisSessionRepository sessionRepository = new RedisSessionRepository();
-//        return sessionRepository;
-//    }
+    /**
+     * session仓库
+     * @return
+     */
+    @Bean
+    public RedisSessionRepository sessionRepository() {
+        RedisSessionRepository sessionRepository = new RedisSessionRepository();
+        return sessionRepository;
+    }
 
 
+    /**
+     * 会话管理
+     * @return
+     */
     @Bean
     public SessionManager sessionManager() {
         DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
         sessionManager.setGlobalSessionTimeout(1800000);
         sessionManager.setDeleteInvalidSessions(true);
         sessionManager.setSessionValidationInterval(1800000);
-  //      sessionManager.setSessionDAO(sessionRepository());
+       sessionManager.setSessionDAO(sessionRepository());
         sessionManager.setSessionValidationSchedulerEnabled(true);
         return sessionManager;
     }
@@ -142,6 +150,10 @@ public class ShiroConfiguration {
         return cookieRememberMeManager;
     }
 
+    /**
+     * 自定义的拦截器：session拦截器
+     * @return
+     */
     @Bean
     SessionExpiredFilter sessionExpiredFilter(){
         SessionExpiredFilter sessionExpiredFilter=new SessionExpiredFilter();

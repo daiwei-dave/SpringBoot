@@ -4,6 +4,7 @@ import com.dw.web.common.ErrorCode;
 import com.dw.web.common.ResultData;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -117,5 +118,21 @@ public class LoginController {
         logger.debug("用户退出系统");
         return ResultData.newSuccessResultData();
        
+    }
+
+    /**
+     * 查询session是否过期
+     * @return
+     */
+    @RequestMapping(value = "/checkSession")
+    @ResponseBody
+    public ResultData checkSession() {
+        Subject subject = SecurityUtils.getSubject();
+        Session session = subject.getSession(false);
+        if (session==null){
+            logger.error("session已经过期");
+            return ResultData.newResultData(ErrorCode.FAILOR,"session已经过期");
+        }
+        return ResultData.newSuccessResultData();
     }
 }
