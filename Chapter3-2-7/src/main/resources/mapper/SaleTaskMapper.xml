@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.didispace.dao.SaleTaskDao">
+	<resultMap id="baseResultMap" type="com.didispace.entity.SaleTask">
+		<result column="task_id" property="taskId" />
+		<result column="task_name" property="taskName" />
+		<result column="branch_total" property="branchTotal" />
+		<result column="store_name" property="storeName" />
+		<result column="store_id" property="storeId" />
+		<result column="store_sale" property="storeSale" />
+	</resultMap>
+
+	<sql id="baseColumnList">
+		task_id,task_name,branch_total,store_name,store_id,store_sale
+	</sql>
+
+	<sql id="baseWhereClause">
+		where 1=1
+		<trim suffixOverrides=",">
+			<if test="taskId != null">
+				and task_id=#{taskId}
+			</if>
+			<if test="taskName != null">
+				and task_name=#{taskName}
+			</if>
+			<if test="branchTotal != null">
+				and branch_total=#{branchTotal}
+			</if>
+			<if test="storeName != null">
+				and store_name=#{storeName}
+			</if>
+			<if test="storeId != null">
+				and store_id=#{storeId}
+			</if>
+			<if test="storeSale != null">
+				and store_sale=#{storeSale}
+			</if>
+		</trim>
+	</sql>
+
+	<sql id="selectiveSetClause">
+		<trim suffixOverrides=",">
+			<if test="taskId != null">
+				task_id=#{taskId},
+			</if>
+			<if test="taskName != null">
+				task_name=#{taskName},
+			</if>
+			<if test="branchTotal != null">
+				branch_total=#{branchTotal},
+			</if>
+			<if test="storeName != null">
+				store_name=#{storeName},
+			</if>
+			<if test="storeId != null">
+				store_id=#{storeId},
+			</if>
+			<if test="storeSale != null">
+				store_sale=#{storeSale},
+			</if>
+		</trim>
+	</sql>
+
+	<!--<insert id="add" parameterType="Object">-->
+		<!--insert into-->
+		<!--t_sale_task(task_id,task_name,branch_total,store_name,store_id,store_sale)-->
+		<!--values(#{taskId},#{taskName},#{branchTotal},#{storeName},#{storeId},#{storeSale})-->
+	<!--</insert>-->
+	<insert id="batchAdd" parameterType="Object">
+		insert into
+		t_sale_task(task_id,task_name,branch_total,store_name,store_id,store_sale)
+		values
+		<foreach collection="storeList" item="item" index="index" separator=",">
+			(#{taskId},#{taskName},#{branchTotal},#{item.storeName},#{item.storeId},#{item.storeSale})
+		</foreach>
+	</insert>
+
+	<update id="update" parameterType="Object">
+		update t_sale_task set
+		task_name=#{taskName},branch_total=#{branchTotal},store_name=#{storeName},store_id=#{storeId},store_sale=#{storeSale}
+		where task_id=#{taskId}
+	</update>
+
+	<update id="updateBySelective" parameterType="Object">
+		update t_sale_task set
+		<include refid="selectiveSetClause" />
+		where task_id=#{taskId}
+	</update>
+
+	<delete id="delete" parameterType="Object">
+		delete from t_sale_task where
+		task_id=#{taskId}
+	</delete>
+
+	<select id="queryById" resultMap="baseResultMap" parameterType="Object">
+		select
+		<include refid="baseColumnList" />
+		from t_sale_task where task_id=#{taskId}
+	</select>
+
+	<select id="queryByCount" resultType="java.lang.Integer"
+		parameterType="Object">
+		select count(1) from t_sale_task
+		<include refid="baseWhereClause" />
+	</select>
+
+	<select id="queryByList" resultMap="baseResultMap"
+		parameterType="Object">
+		select
+		<include refid="baseColumnList" />
+		from t_sale_task
+		<include refid="baseWhereClause" />
+	</select>
+
+</mapper>

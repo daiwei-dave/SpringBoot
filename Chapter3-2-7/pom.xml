@@ -20,7 +20,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
+		<java.version>1.7</java.version>
+		<com.alibaba.druid.version>1.0.26</com.alibaba.druid.version>
 	</properties>
 
 	<dependencies>
@@ -45,7 +46,30 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.21</version>
+			<version>5.1.39</version>
+		</dependency>
+
+
+		<!--分页插件-->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.gitee.daiwei-dave</groupId>
+			<artifactId>basic-commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
+		<!--datasoure-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${com.alibaba.druid.version}</version>
 		</dependency>
 
 	</dependencies>
@@ -57,6 +81,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
+
+		<finalName>springboot-shiro</finalName>
+
 	</build>
+
+
 
 </project>

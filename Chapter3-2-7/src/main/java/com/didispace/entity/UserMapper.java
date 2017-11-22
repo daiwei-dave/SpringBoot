@@ -1,4 +1,4 @@
-package com.didispace.domain;
+package com.didispace.entity;
 
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;

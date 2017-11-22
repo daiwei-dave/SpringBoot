@@ -1,7 +1,7 @@
 package com.didispace;
 
-import com.didispace.domain.User;
-import com.didispace.domain.UserMapper;
+import com.didispace.entity.User;
+import com.didispace.entity.UserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +10,9 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -27,5 +30,6 @@ public class ApplicationTests {
 		User u = userMapper.findByName("AAA");
 		Assert.assertEquals(20, u.getAge().intValue());
 	}
+
 
 }

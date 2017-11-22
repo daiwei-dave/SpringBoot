@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration >
+
+    <contextName>gome-store-server</contextName>
+
+	<substitutionProperty name="logbase" value="logs/sysout.out.log" />
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+              <level>debug</level>
+        </filter>
+        <encoder>
+            <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+   	<!-- 
+    <appender name="file"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logbase}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logbase}-%d{yyyy-MM-dd}.%i.txt</fileNamePattern>
+            <maxFileSize>50MB</maxFileSize>    
+		   <maxHistory>50</maxHistory>
+		   <totalSizeCap>10GB</totalSizeCap>  
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy:MM:dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+ 	-->
+
+    <root>
+        <appender-ref ref="console" level="debug"/>
+        <!-- <appender-ref ref="file"    level="debug"/> -->
+    </root>
+
+    <logger name="org.springframework" level="info" />
+    <logger name="org.hibernate" level="info" />
+    <logger name="org.apache.ibatis.session.defaults" level="info" />
+
+</configuration>

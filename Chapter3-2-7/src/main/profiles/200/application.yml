@@ -1,0 +1,23 @@
+server:
+    port: 8050
+    session-timeout: 30
+    tomcat.max-threads: 450
+    tomcat.uri-encoding: UTF-8
+
+
+spring:
+    datasource:
+       type: com.alibaba.druid.pool.DruidDataSource
+       url: jdbc:mysql://localhost:3306/springboot
+       username: root
+       password: 123456
+       driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapperLocations: classpath*:com/didispace/mapper/*.xml
+  typeAliasesPackage: com.didispace.entity
+
+
+datasource:
+  type: com.alibaba.druid.pool.DruidDataSource # 使用druid数据源
