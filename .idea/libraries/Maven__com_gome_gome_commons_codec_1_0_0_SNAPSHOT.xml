@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.gome:gome-commons-codec:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-commons-codec/1.0.0-SNAPSHOT/gome-commons-codec-1.0.0-20170413.081138-41.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-commons-codec/1.0.0-SNAPSHOT/gome-commons-codec-1.0.0-20170413.081138-41-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-commons-codec/1.0.0-SNAPSHOT/gome-commons-codec-1.0.0-20170413.081138-41-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,6 +1,5 @@
 package com.didispace;
 
-import com.didispace.domain.User;
 import com.didispace.web.HelloController;
 import com.didispace.web.UserController;
 import org.junit.Before;

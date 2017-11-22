@@ -1,9 +1,10 @@
-package com.didispace.domain.s;
+package com.didispace.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author 程序猿DD
@@ -12,7 +13,7 @@ import javax.persistence.Id;
  * @blog http://blog.didispace.com
  */
 @Entity
-public class Message {
+public class Employee implements Serializable {
 
     @Id
     @GeneratedValue
@@ -22,13 +23,13 @@ public class Message {
     private String name;
 
     @Column(nullable = false)
-    private String content;
+    private Integer age;
 
-    public Message(){}
+    public Employee(){}
 
-    public Message(String name, String content) {
+    public Employee(String name, Integer age) {
         this.name = name;
-        this.content = content;
+        this.age = age;
     }
 
     public Long getId() {
@@ -47,12 +48,20 @@ public class Message {
         this.name = name;
     }
 
-    public String getContent() {
-        return content;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

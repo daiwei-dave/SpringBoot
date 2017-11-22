@@ -1,4 +1,4 @@
-package com.didispace.domain.s;
+package com.didispace.entity.s;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

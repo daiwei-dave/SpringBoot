@@ -1,6 +1,6 @@
 package com.didispace;
 
-import com.didispace.domain.User;
+import com.didispace.entity.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

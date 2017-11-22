@@ -21,7 +21,7 @@ import java.util.Map;
 @EnableJpaRepositories(
         entityManagerFactoryRef="entityManagerFactorySecondary",
         transactionManagerRef="transactionManagerSecondary",
-        basePackages= { "com.didispace.domain.s" }) //设置Repository所在位置
+        basePackages= {"com.didispace.entity.s"}) //设置Repository所在位置
 public class SecondaryConfig {
 
     @Autowired @Qualifier("secondaryDataSource")
@@ -37,7 +37,7 @@ public class SecondaryConfig {
         return builder
                 .dataSource(secondaryDataSource)
                 .properties(getVendorProperties(secondaryDataSource))
-                .packages("com.didispace.domain.s") //设置实体类所在位置
+                .packages("com.didispace.entity.s") //设置实体类所在位置
                 .persistenceUnit("secondaryPersistenceUnit")
                 .build();
     }

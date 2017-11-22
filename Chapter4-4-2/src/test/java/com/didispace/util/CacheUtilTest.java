@@ -1,8 +1,8 @@
 package com.didispace.util;
 
 import com.didispace.Application;
-import com.didispace.domain.User;
-import com.didispace.domain.UserRepository;
+import com.didispace.entity.User;
+import com.didispace.entity.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.cache.CacheManager;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by daiwei on 2017/9/15.

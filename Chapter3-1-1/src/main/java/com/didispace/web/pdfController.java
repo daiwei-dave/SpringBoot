@@ -1,11 +1,8 @@
 package com.didispace.web;
 
 import com.didispace.config.Const;
-import com.didispace.domain.User;
-import com.dw.config.Consts;
-import com.dw.entity.CouponUser;
+import com.didispace.entity.User;
 import com.dw.wraper.PDFWraper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

@@ -1,9 +1,8 @@
 package com.didispace;
 
-import com.didispace.domain.User;
-import com.didispace.domain.UserMapper;
+import com.didispace.entity.User;
+import com.didispace.entity.UserMapper;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

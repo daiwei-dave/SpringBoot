@@ -1,9 +1,9 @@
 package com.didispace;
 
-import com.didispace.domain.p.User;
-import com.didispace.domain.p.UserRepository;
-import com.didispace.domain.s.Message;
-import com.didispace.domain.s.MessageRepository;
+import com.didispace.entity.p.User;
+import com.didispace.entity.p.UserRepository;
+import com.didispace.entity.s.Message;
+import com.didispace.entity.s.MessageRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

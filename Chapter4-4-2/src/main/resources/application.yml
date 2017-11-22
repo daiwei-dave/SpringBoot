@@ -1,0 +1,29 @@
+spring:
+    output:
+      ansi:
+        enabled: detect
+    redis:
+      timeOutType: 'hour'
+      pool:
+        maxActive: 8
+        maxWait: -1
+        maxIdle: 8
+        minIdle: 0
+      cluster:
+        nodes[0]: 10.112.101.165:6373
+        nodes[1]: 10.112.101.165:6374
+        nodes[2]: 10.112.101.165:6375
+        nodes[3]: 10.112.101.165:6376
+        nodes[4]: 10.112.101.165:6377
+        nodes[5]: 10.112.101.165:6378
+    datasource:
+      name: mydb
+      url: jdbc:mysql://localhost:3306/springboot
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+    jpa:
+      properties:
+        hibernate:
+          show_sql: true
+          hbm2ddl.auto: create-drop

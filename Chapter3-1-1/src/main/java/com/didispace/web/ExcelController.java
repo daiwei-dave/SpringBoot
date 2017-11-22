@@ -1,9 +1,7 @@
 package com.didispace.web;
-import com.didispace.domain.User;
-import com.gitee.excel.userModel.annotations.test.model.Entity;
+import com.didispace.entity.User;
 import com.gitee.excel.userModel.annotations.wraper.ExportExcelWraper;
 import com.gitee.excel.userModel.annotations.wraper.ImportExcelWraper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

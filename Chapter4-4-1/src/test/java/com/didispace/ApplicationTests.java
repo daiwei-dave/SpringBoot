@@ -1,7 +1,7 @@
 package com.didispace;
 
-import com.didispace.domain.User;
-import com.didispace.domain.UserRepository;
+import com.didispace.entity.User;
+import com.didispace.entity.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

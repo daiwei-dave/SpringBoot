@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.gome:gome-rop:2.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-rop/2.0.1-SNAPSHOT/gome-rop-2.0.1-20170525.080445-19.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-rop/2.0.1-SNAPSHOT/gome-rop-2.0.1-20170525.080445-19-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/gome-rop/2.0.1-SNAPSHOT/gome-rop-2.0.1-20170525.080445-19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

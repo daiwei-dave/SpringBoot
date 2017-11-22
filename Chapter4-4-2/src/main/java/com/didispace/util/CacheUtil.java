@@ -1,6 +1,6 @@
 package com.didispace.util;
 
-import com.didispace.domain.User;
+import com.didispace.entity.User;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

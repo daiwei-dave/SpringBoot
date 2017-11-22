@@ -40,7 +40,7 @@
 - chapter3-2-4：[多数据源配置（二）：Spring-data-jpa](http://blog.didispace.com/springbootmultidatasource/)
 - chapter3-2-5：[使用NoSQL数据库（一）：Redis](http://blog.didispace.com/springbootredis/)
 - chapter3-2-6：[使用NoSQL数据库（二）：MongoDB](http://blog.didispace.com/springbootmongodb/)(还未看)
-- chapter3-2-7：[整合MyBatis](http://blog.didispace.com/springbootmybatis/)(重点掌握)
+- chapter3-2-7：[springboot整合mybatis](http://blog.didispace.com/springbootmybatis/)(重点掌握)
 - chapter3-2-8：[MyBatis注解配置详解](http://blog.didispace.com/mybatisinfo/)(重点掌握)
 
 ### 事务管理
