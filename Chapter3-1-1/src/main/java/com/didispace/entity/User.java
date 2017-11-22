@@ -1,4 +1,4 @@
-package com.didispace.domain;
+package com.didispace.entity;
 
 
 import com.gitee.excel.userModel.annotations.ExcelField;

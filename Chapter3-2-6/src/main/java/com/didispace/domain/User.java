@@ -1,4 +1,4 @@
-package com.didispace.domain;
+package com.didispace.entity;
 
 import org.springframework.data.annotation.Id;
 

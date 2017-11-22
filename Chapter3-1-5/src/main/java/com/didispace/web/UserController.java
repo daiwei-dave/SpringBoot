@@ -1,6 +1,6 @@
 package com.didispace.web;
 
-import com.didispace.domain.User;
+import com.didispace.entity.User;
 
 import java.util.*;
 
