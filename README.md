@@ -25,7 +25,7 @@
 
 ### Web开发
 
-- chapter3-1-1：[构建一个较为复杂的RESTful API以及单元测试](http://blog.didispace.com/springbootrestfulapi/)
+- chapter3-1-1：[自己开发的jar包功能测试](http://blog.didispace.com/springbootrestfulapi/)
 - chapter3-1-2：[使用Thymeleaf模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
 - chapter3-1-3：[使用Freemarker模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
 - chapter3-1-4：[使用Velocity模板引擎渲染web视图](http://blog.didispace.com/springbootweb/)
