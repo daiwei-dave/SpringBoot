@@ -49,7 +49,7 @@ public class Application {
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 
 		sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:/mapper/*.xml"));
-
+		sqlSessionFactoryBean.setConfigLocation(new PathMatchingResourcePatternResolver().getResource("classpath:/mybatis-config.xml"));
 		return sqlSessionFactoryBean.getObject();
 	}
 

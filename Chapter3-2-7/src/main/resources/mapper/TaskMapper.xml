@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.didispace.dao.TaskDao">
+	<resultMap id="baseResultMap" type="com.didispace.entity.Task">
+		<result column="id" property="id" />
+		<result column="branch_no" property="branchNo" />
+		<result column="branch_name" property="branchName" />
+		<result column="task_no" property="taskNo" />
+		<result column="task_name" property="taskName" />
+		<result column="branch_total" property="branchTotal" />
+		<result column="task_type" property="taskType" />
+		<result column="start_date" property="startDate" />
+		<result column="end_date" property="endDate" />
+	</resultMap>
+
+
+
+	<sql id="baseColumnList">
+		id,branch_no,branch_name,task_no,task_name,branch_total,task_type,start_date,end_date
+	</sql>
+
+	<sql id="baseWhereClause">
+		where 1=1
+		<trim suffixOverrides=",">
+			<if test="taskName != null and taskName != ''">
+				and task_name like concat(concat('%','${taskName}'),'%')
+			</if>
+			<if test="taskType != null and taskType != ''">
+				and task_type=#{taskType}
+			</if>
+			<if test="branchNo != null and branchNo != ''">
+				and branch_no=#{branchNo}
+			</if>
+		</trim>
+	</sql>
+
+	<sql id="selectiveSetClause">
+		<trim suffixOverrides=",">
+			<if test="branchNo != null">
+				branch_no=#{branchNo},
+			</if>
+			<if test="branchName != null">
+				branch_name=#{branchName},
+			</if>
+			<if test="taskNo != null">
+				task_no=#{taskNo},
+			</if>
+			<if test="taskName != null">
+				task_name=#{taskName},
+			</if>
+			<if test="branchTotal != null">
+				branch_total=#{branchTotal},
+			</if>
+			<if test="taskType != null">
+				task_type=#{taskType},
+			</if>
+			<if test="startDate != null">
+				start_date=#{startDate},
+			</if>
+			<if test="endDate != null">
+				end_date=#{endDate},
+			</if>
+		</trim>
+	</sql>
+
+
+	<sql id="taskSetClause">
+		<trim suffixOverrides=",">
+			<if test="branchTotal != null">
+				branch_total=#{branchTotal},
+			</if>
+			<if test="taskName != null">
+				task_name=#{taskName},
+			</if>
+			<if test="taskType != null">
+				task_type=#{taskType},
+			</if>
+			<if test="startDate != null">
+				start_date=#{startDate},
+			</if>
+			<if test="endDate != null">
+				end_date=#{endDate},
+			</if>
+		</trim>
+	</sql>
+
+	<insert id="add" parameterType="Object">
+		<selectKey  resultType="java.lang.Integer" order="BEFORE" keyProperty="id">
+			SELECT T_TASK_SEQ.NEXTVAL as id from DUAL
+		</selectKey>
+		insert into
+		t_task(id,branch_no,branch_name,task_no,task_name,branch_total,task_type,start_date,end_date)
+		values(#{id},#{branchNo},#{branchName},#{taskNo},#{taskName},#{branchTotal},#{taskType},#{startDate},#{endDate})
+	</insert>
+
+	<update id="update" parameterType="Object">
+		update t_task set
+		branch_no=#{branchNo},branch_name=#{branchName},task_no=#{taskNo},task_name=#{taskName},branch_total=#{branchTotal},task_type=#{taskType},start_date=#{startDate},end_date=#{endDate}
+		where id=#{id}
+	</update>
+
+
+	<update id="updateTask" parameterType="Object">
+		update t_task set
+		<include refid="taskSetClause" />
+		where id=#{id} AND branch_no=#{branchNo}
+	</update>
+
+
+
+
+	<update id="updateBySelective" parameterType="Object">
+		update t_task set
+		<include refid="selectiveSetClause" />
+		where id=#{id}
+	</update>
+
+	<delete id="delete" parameterType="Object">
+		delete from t_task where
+		id=#{id}
+	</delete>
+
+	<select id="queryById" resultMap="baseResultMap" parameterType="Object">
+		select
+		<include refid="baseColumnList" />
+		from t_task where id=#{id}
+	</select>
+
+	<select id="queryByCount" resultType="java.lang.Integer"
+		parameterType="Object">
+		select count(1) from t_task
+		<include refid="baseWhereClause" />
+	</select>
+
+	<select id="queryByList" resultMap="baseResultMap"
+		parameterType="Object">
+		select
+		<include refid="baseColumnList" />
+		from t_task
+		<include refid="baseWhereClause" />
+	</select>
+
+
+	<!--
+	以开始和结束时间参数为条件分开查询
+	开始时间是否包含在其他时间段内、
+	结束时间是否包含在其他时间段内、
+	是否有其他时间包含在参数时间段内即外包、
+	是否有参数时间包含在其他时间段内即内包
+	-->
+	<select id="queryByStartDateAndEndDate" resultType="java.lang.Integer"
+			parameterType="Object">
+		SELECT
+		COUNT(id)
+		FROM
+		t_task t
+		WHERE
+		(
+		<![CDATA[
+		(
+		to_date(start_date, 'yyyy-MM-dd')>=to_date(#{startDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		AND to_date(start_date, 'yyyy-MM-dd')<=to_date(#{endDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		)
+		OR
+		(
+		to_date(end_date, 'yyyy-MM-dd')>=to_date(#{startDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		AND to_date(end_date, 'yyyy-MM-dd')<=to_date(#{endDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		)
+		OR
+		(
+		to_date(start_date, 'yyyy-MM-dd')>=to_date(#{startDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		AND to_date(end_date, 'yyyy-MM-dd')<=to_date(#{endDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		)
+		OR
+		(
+		to_date(start_date, 'yyyy-MM-dd')<=to_date(#{startDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		AND to_date(end_date, 'yyyy-MM-dd')>=to_date(#{endDate,jdbcType=VARCHAR}, 'yyyy-MM-dd')
+		)
+		 ]]>
+		 )
+		AND task_type = '0'
+		AND branch_no = #{branchNo}
+		<if test="id != null">
+			and id !=#{id}
+		</if>
+	</select>
+
+
+
+
+
+
+
+
+
+
+</mapper>

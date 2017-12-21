@@ -53,4 +53,23 @@ public class SaleTaskController {
             return ResultData.newResultData(ErrorCode.ADD_FAILOR, "新增失败");
         }
     }
+
+
+    /**
+     * 新增
+     * @param
+     * @return
+     */
+    @RequestMapping("/pager")
+    @ResponseBody
+    public ResultData<SaleTask> pager(SaleTask saleTask) {
+        try {
+            saleTaskService.queryByList(saleTask);
+            return ResultData.newSuccessResultData();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResultData.newResultData(ErrorCode.ADD_FAILOR, "新增失败");
+        }
+    }
+
 }
