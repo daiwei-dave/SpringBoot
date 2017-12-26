@@ -4,6 +4,10 @@
 1.使用spring-data-redis 的RedisTemplate进行缓存
 
 
+1)待优化
+存储的对象抽象出来
+
+
 2.使用Spring-cache的注解进行缓存
 
 
