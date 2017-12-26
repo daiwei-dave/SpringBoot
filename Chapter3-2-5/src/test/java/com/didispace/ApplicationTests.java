@@ -38,6 +38,7 @@ public class ApplicationTests {
 		user = new User("蜘蛛侠", 40);
 		redisTemplate.opsForValue().set(user.getUsername(), user);
 
+
 		Assert.assertEquals(20, redisTemplate.opsForValue().get("超人").getAge().longValue());
 		Assert.assertEquals(30, redisTemplate.opsForValue().get("蝙蝠侠").getAge().longValue());
 		Assert.assertEquals(40, redisTemplate.opsForValue().get("蜘蛛侠").getAge().longValue());

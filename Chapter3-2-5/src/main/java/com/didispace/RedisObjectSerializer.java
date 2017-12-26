@@ -6,6 +6,9 @@ import org.springframework.core.serializer.support.SerializingConverter;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.SerializationException;
 
+/**
+ * 实现对象的序列化接口
+ */
 public class RedisObjectSerializer implements RedisSerializer<Object> {
 
   private Converter<Object, byte[]> serializer = new SerializingConverter();
@@ -13,6 +16,12 @@ public class RedisObjectSerializer implements RedisSerializer<Object> {
 
   static final byte[] EMPTY_ARRAY = new byte[0];
 
+  /**
+   * 反序列化
+   * @param bytes
+   * @return
+   */
+  @Override
   public Object deserialize(byte[] bytes) {
     if (isEmpty(bytes)) {
       return null;
@@ -25,6 +34,12 @@ public class RedisObjectSerializer implements RedisSerializer<Object> {
     }
   }
 
+  /**
+   * 序列化
+   * @param object
+   * @return
+   */
+  @Override
   public byte[] serialize(Object object) {
     if (object == null) {
       return EMPTY_ARRAY;
