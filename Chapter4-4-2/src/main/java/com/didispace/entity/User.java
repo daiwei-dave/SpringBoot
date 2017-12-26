@@ -1,9 +1,4 @@
 package com.didispace.entity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
@@ -12,17 +7,16 @@ import java.io.Serializable;
  * @date 16/3/21 下午3:35.
  * @blog http://blog.didispace.com
  */
-@Entity
+
 public class User implements Serializable {
 
-    @Id
-    @GeneratedValue
+
     private Long id;
 
-    @Column(nullable = false)
+
     private String name;
 
-    @Column(nullable = false)
+
     private Integer age;
 
     public User(){}

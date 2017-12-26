@@ -11,8 +11,8 @@ import java.util.List;
 * @Date 2017/3/24
 * @Copyright(c) gome inc Gome Co.,LTD
 */
-//@Component
-//@ConfigurationProperties(prefix = "spring.redis.cluster")
+@Component
+@ConfigurationProperties(prefix = "spring.redis.cluster")
 public class ClusterConfigurationProperties {
 
     List<String> nodes;

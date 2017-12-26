@@ -33,7 +33,7 @@ public class CacheUtil {
     private String timeOutType;
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String,User> redisTemplate;
 
 
     public boolean put(String key, User value) {

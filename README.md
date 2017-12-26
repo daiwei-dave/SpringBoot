@@ -21,7 +21,7 @@
 
 ### 工程配置
 
-- chapter2-1-1：[配置文件详解：自定义属性、随机数、多环境配置等](http://blog.didispace.com/springbootproperties/)(重点掌握)
+- chapter2-1-1：[环境配置](http://blog.didispace.com/springbootproperties/)(重点掌握)
 
 ### Web开发
 
