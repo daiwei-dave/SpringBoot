@@ -5,7 +5,7 @@ import org.springframework.data.redis.serializer.SerializationException;
 import org.springframework.util.SerializationUtils;
 
 /**
- * @Description 对象的序列化和反序列化
+ * @Description 对象的序列化和反序列化工具
  * @Author daiwei
  * @Date 2017/8/17
  * @Copyright(c) gome inc Gome Co.,LTD
