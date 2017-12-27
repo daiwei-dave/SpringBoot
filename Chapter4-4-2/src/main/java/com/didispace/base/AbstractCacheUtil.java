@@ -22,7 +22,7 @@ public abstract class AbstractCacheUtil<K,V> {
     private static final Logger logger = LoggerFactory.getLogger(AbstractCacheUtil.class);
 
     // 过期时间，正式环境默认1天
-    protected static final int EMPLOYEE_TIME_OUT = 1;
+    protected static final int TIME_OUT = 1;
 
     // 超时类型，即单位时分秒
     @Value("${spring.redis.timeOutType}")
@@ -40,9 +40,9 @@ public abstract class AbstractCacheUtil<K,V> {
             try {
                 redisTemplate.opsForValue().set(key, value);
                 if (timeOutType != null && timeOutType.equals("hour")) {
-                    redisTemplate.expire(key, EMPLOYEE_TIME_OUT, TimeUnit.HOURS);
+                    redisTemplate.expire(key, TIME_OUT, TimeUnit.HOURS);
                 } else {
-                    redisTemplate.expire(key, EMPLOYEE_TIME_OUT, TimeUnit.DAYS);
+                    redisTemplate.expire(key, TIME_OUT, TimeUnit.DAYS);
                 }
             } catch (Exception e) {
                 logger.error("向redis中存储失败，参数:{key:{}, value:{}}, 异常信息：{}", key, value.toString(), e.toString());

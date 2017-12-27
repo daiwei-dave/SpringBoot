@@ -40,9 +40,9 @@ public class CacheUserUtil extends AbstractCacheUtil<String,User>{
             try {
                 redisTemplate.opsForValue().set(key, value);
                 if (timeOutType != null && timeOutType.equals("hour")) {
-                    redisTemplate.expire(key, EMPLOYEE_TIME_OUT, TimeUnit.HOURS);
+                    redisTemplate.expire(key, TIME_OUT, TimeUnit.HOURS);
                 } else {
-                    redisTemplate.expire(key, EMPLOYEE_TIME_OUT, TimeUnit.DAYS);
+                    redisTemplate.expire(key, TIME_OUT, TimeUnit.DAYS);
                 }
             } catch (Exception e) {
                 logger.error("向redis中存储失败，参数:{key:{}, value:{}}, 异常信息：{}", key, value.toString(), e.toString());
