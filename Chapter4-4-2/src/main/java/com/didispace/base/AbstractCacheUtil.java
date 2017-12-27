@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  *     实现redis的基本操作
  * </P>
  * @Author daiwei
- * @Date 2017/8/17
+ * @Date 2017/12/27
  * @Copyright(c)
  */
 public abstract class AbstractCacheUtil<K,V> {
