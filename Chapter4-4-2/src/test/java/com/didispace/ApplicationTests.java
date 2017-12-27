@@ -1,9 +1,6 @@
 package com.didispace;
 
-import com.didispace.entity.User;
-import com.didispace.util.CacheUtil;
-import org.junit.Before;
-import org.junit.Test;
+import com.didispace.util.CacheUserUtil;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -26,7 +23,7 @@ public class ApplicationTests {
 	private CacheManager cacheManager;
 
 	@Autowired
-	private CacheUtil cacheUtil;
+	private CacheUserUtil cacheUtil;
 
 
 
