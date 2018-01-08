@@ -39,11 +39,13 @@ public class ApplicationTests {
 
 		User u2 = userRepository.findByName("AAA");
 		System.out.println("第二次查询：" + u2.getAge());
+		System.out.println(u1==u2);
 
 		u1.setAge(20);
 		userRepository.save(u1);
 		System.out.println("准备第三次查询");
 		User u3 = userRepository.findByName("AAA");
+		System.out.println(u2==u3);
 		System.out.println("第三次查询：" + u3.getAge());
 
 	}

@@ -1,2 +1,4 @@
 
 使用spring注解和ehcache进行缓存
+
+EhCache是进程内的缓存框架，能够刷新缓存
