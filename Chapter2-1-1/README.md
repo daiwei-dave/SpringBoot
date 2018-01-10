@@ -3,6 +3,9 @@
 
 1.读取application.properties
 
+修改tomcat端口
+http://blog.csdn.net/argel_lj/article/details/49851625
+
 2.读取application.yml
 @see http://www.cnblogs.com/aqsunkai/archive/2017/04/07/6690573.html
 
