@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.gitee</groupId>
-  <artifactId>com-gitee-dao</artifactId>
+  <artifactId>com.gitee.service</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>com-gitee-dao</name>
+  <name>com.gitee.service</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -23,44 +24,16 @@
 
 
     <dependency>
-      <groupId>com.gitee.daiwei-dave</groupId>
-      <artifactId>basic-commons</artifactId>
-      <version>0.0.2-SNAPSHOT</version>
-    </dependency>
-
-
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.39</version>
-    </dependency>
-
-
-
-
-    <dependency>
       <groupId>com.gitee</groupId>
-      <artifactId>com.gitee.entity</artifactId>
+      <artifactId>com-gitee-dao</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
 
 
     <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis</artifactId>
-      <version>3.4.2</version>
+      <groupId>com.gome.datasource</groupId>
+      <artifactId>gome-sharded-datasource</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
-
-
-  <build>
-    <resources>
-      <resource>
-        <directory>src/main/java</directory>
-        <includes>
-          <include>**/*.xml</include>
-        </includes>
-      </resource>
-    </resources>
-  </build>
 </project>

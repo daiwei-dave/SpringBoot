@@ -29,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" filepath="$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-gitee-dao/com-gitee-dao.iml" filepath="$PROJECT_DIR$/com-gitee-dao/com-gitee-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-gitee-entity/com-gitee-entity.iml" filepath="$PROJECT_DIR$/com-gitee-entity/com-gitee-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-gitee-service/com-gitee-service.iml" filepath="$PROJECT_DIR$/com-gitee-service/com-gitee-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" />

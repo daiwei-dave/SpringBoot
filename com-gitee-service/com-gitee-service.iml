@@ -11,6 +11,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="module" module-name="com-gitee-dao" />
     <orderEntry type="library" name="Maven: com.gitee.daiwei-dave:basic-commons:0.0.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.4.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.4.7.RELEASE" level="project" />
@@ -45,5 +46,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.39" level="project" />
     <orderEntry type="module" module-name="com-gitee-entity" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.gome.datasource:gome-sharded-datasource:1.0.0-SNAPSHOT" level="project" />
   </component>
 </module>

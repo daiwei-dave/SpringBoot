@@ -1,3 +1,5 @@
+server:
+    port: 8050
 datasource:
   # 从库数量
   readSize: 3
@@ -5,7 +7,7 @@ datasource:
 
   # 主库
   write:
-    url: jdbc:mysql://localhost:3306/gome_store?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/orm?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -25,7 +27,7 @@ datasource:
     maxOpenPreparedStatements: 20
  # 从库
   read1:
-    url: jdbc:mysql://localhost:3306/gome_store?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -45,7 +47,7 @@ datasource:
     maxOpenPreparedStatements: 20
 
   read2:
-    url: jdbc:mysql://localhost:3306/gome_store?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
@@ -65,7 +67,7 @@ datasource:
     maxOpenPreparedStatements: 20
 
   read3:
-      url: jdbc:mysql://localhost:3306/gome_store?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
       username: root
       password: 123456
       driver-class-name: com.mysql.jdbc.Driver

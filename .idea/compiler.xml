@@ -32,6 +32,7 @@
         <module name="Chapter4-5-2" />
         <module name="com-gitee-dao" />
         <module name="com-gitee-entity" />
+        <module name="com-gitee-service" />
         <module name="compute-api" />
         <module name="compute-api-server" />
         <module name="compute-service" />
@@ -73,6 +74,7 @@
       <module name="Chapter4-5-2" target="1.8" />
       <module name="com-gitee-dao" target="1.5" />
       <module name="com-gitee-entity" target="1.5" />
+      <module name="com-gitee-service" target="1.5" />
       <module name="compute-api" target="1.7" />
       <module name="compute-api-server" target="1.7" />
       <module name="compute-service" target="1.7" />
