@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.gome.datasource:gome-sharded-datasource:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/datasource/gome-sharded-datasource/1.0.0-SNAPSHOT/gome-sharded-datasource-1.0.0-20170824.092354-22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/datasource/gome-sharded-datasource/1.0.0-SNAPSHOT/gome-sharded-datasource-1.0.0-20170824.092354-22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gome/datasource/gome-sharded-datasource/1.0.0-SNAPSHOT/gome-sharded-datasource-1.0.0-20170824.092354-22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

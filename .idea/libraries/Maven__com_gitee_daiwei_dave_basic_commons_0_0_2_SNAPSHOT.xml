@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.gitee.daiwei-dave:basic-commons:0.0.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gitee/daiwei-dave/basic-commons/0.0.2-SNAPSHOT/basic-commons-0.0.2-20180115.095436-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gitee/daiwei-dave/basic-commons/0.0.2-SNAPSHOT/basic-commons-0.0.2-20180115.095436-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/gitee/daiwei-dave/basic-commons/0.0.2-SNAPSHOT/basic-commons-0.0.2-20180115.095436-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

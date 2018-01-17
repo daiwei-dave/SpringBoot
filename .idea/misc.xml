@@ -40,6 +40,9 @@
         <option value="$PROJECT_DIR$/Chapter4-3-3/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter4-3-4/pom.xml" />
         <option value="$PROJECT_DIR$/Chapter4-5-2/pom.xml" />
+        <option value="$PROJECT_DIR$/datasource-share/pom.xml" />
+        <option value="$PROJECT_DIR$/com-gitee-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/com-gitee-entity/pom.xml" />
       </list>
     </option>
   </component>

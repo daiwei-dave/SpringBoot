@@ -35,5 +35,8 @@
     <file url="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter9-2-2/consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com-gitee-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com-gitee-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasource-share" charset="UTF-8" />
   </component>
 </project>

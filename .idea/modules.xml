@@ -27,12 +27,15 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter4-5-2/Chapter4-5-2.iml" filepath="$PROJECT_DIR$/Chapter4-5-2/Chapter4-5-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-Learning.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-Learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" filepath="$PROJECT_DIR$/Chapter3-1-5/SpringBootWithSwagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-gitee-dao/com-gitee-dao.iml" filepath="$PROJECT_DIR$/com-gitee-dao/com-gitee-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com-gitee-entity/com-gitee-entity.iml" filepath="$PROJECT_DIR$/com-gitee-entity/com-gitee-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api/compute-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-api-server/compute-api-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/compute-service/compute-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-service (1).iml" filepath="$PROJECT_DIR$/Chapter9-2-2/compute-service/compute-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" filepath="$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/datasource-share/datasource-share.iml" filepath="$PROJECT_DIR$/datasource-share/datasource-share.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-3/demo.iml" filepath="$PROJECT_DIR$/Chapter3-1-3/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter4-2-6/demo (1).iml" filepath="$PROJECT_DIR$/Chapter4-2-6/demo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5-2-1/rabbitmq-hello.iml" filepath="$PROJECT_DIR$/Chapter5-2-1/rabbitmq-hello.iml" />
