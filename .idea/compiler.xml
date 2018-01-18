@@ -39,6 +39,7 @@
         <module name="consumer" />
         <module name="consumer (1)" />
         <module name="datasource-share" />
+        <module name="datasource-share-sdk" />
         <module name="demo" />
         <module name="demo (1)" />
         <module name="rabbitmq-hello" />
@@ -82,6 +83,7 @@
       <module name="consumer" target="1.7" />
       <module name="consumer (1)" target="1.7" />
       <module name="datasource-share" target="1.8" />
+      <module name="datasource-share-sdk" target="1.5" />
       <module name="demo" target="1.8" />
       <module name="demo (1)" target="1.8" />
       <module name="rabbitmq-hello" target="1.7" />

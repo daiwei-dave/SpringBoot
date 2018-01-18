@@ -37,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" filepath="$PROJECT_DIR$/Chapter9-2-1/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" filepath="$PROJECT_DIR$/Chapter9-2-2/consumer/consumer (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/datasource-share/datasource-share.iml" filepath="$PROJECT_DIR$/datasource-share/datasource-share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datasource-share-sdk/datasource-share-sdk.iml" filepath="$PROJECT_DIR$/datasource-share-sdk/datasource-share-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter3-1-3/demo.iml" filepath="$PROJECT_DIR$/Chapter3-1-3/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter4-2-6/demo (1).iml" filepath="$PROJECT_DIR$/Chapter4-2-6/demo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5-2-1/rabbitmq-hello.iml" filepath="$PROJECT_DIR$/Chapter5-2-1/rabbitmq-hello.iml" />

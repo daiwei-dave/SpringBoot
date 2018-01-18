@@ -31,9 +31,9 @@
 
 
     <dependency>
-      <groupId>com.gome.datasource</groupId>
-      <artifactId>gome-sharded-datasource</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <groupId>com.gitee</groupId>
+      <artifactId>datasource-share-sdk</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

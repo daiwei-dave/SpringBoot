@@ -1,8 +1,8 @@
 package com.gitee.config;
 
-import com.gome.datasource.shard.ShardDataSource;
-import com.gome.datasource.shard.ShardDataSourceAspect;
-import com.gome.datasource.shard.SlaveConfig;
+import com.gitee.shard.ShardDataSource;
+import com.gitee.shard.ShardDataSourceAspect;
+import com.gitee.shard.SlaveConfig;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.slf4j.Logger;

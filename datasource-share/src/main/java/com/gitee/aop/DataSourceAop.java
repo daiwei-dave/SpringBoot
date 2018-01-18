@@ -1,6 +1,7 @@
 package com.gitee.aop;
 
-import com.gome.datasource.shard.ShardDataSourceAspect;
+
+import com.gitee.shard.ShardDataSourceAspect;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;

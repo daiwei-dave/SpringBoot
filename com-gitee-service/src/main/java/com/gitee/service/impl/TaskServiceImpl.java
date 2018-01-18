@@ -6,7 +6,7 @@ import com.gitee.common.service.BaseServiceSupport;
 import com.gitee.dao.TaskDao;
 import com.gitee.entity.Task;
 import com.gitee.service.TaskService;
-import com.gome.datasource.shard.annotation.ReadDatasource;
+import com.gitee.shard.annotation.ReadDatasource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

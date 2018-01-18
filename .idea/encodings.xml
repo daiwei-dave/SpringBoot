@@ -39,5 +39,6 @@
     <file url="file://$PROJECT_DIR$/com-gitee-entity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com-gitee-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/datasource-share" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasource-share-sdk" charset="UTF-8" />
   </component>
 </project>
