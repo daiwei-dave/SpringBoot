@@ -8,10 +8,6 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
 /**
@@ -47,17 +43,19 @@ public class LogAspect {
     @Before("serviceLog()")
     public void serviceBefore(JoinPoint joinPoint) throws Throwable {
         startTime.set(System.currentTimeMillis());
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+
         //获取请求参数
         logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
     }
 
 
     @AfterReturning(returning = "ret", pointcut = "serviceLog()")
-    public void serviceAfterReturning(Object ret) throws Throwable {
+    public void serviceAfterReturning(JoinPoint joinPoint,Object ret) throws Throwable {
         // 处理完请求，返回内容
         logger.info("RESPONSE : " + ret);
-        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
+        String declaringTypeName = joinPoint.getSignature().getDeclaringTypeName();
+        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName()+"调用耗时"+(System.currentTimeMillis() - startTime.get())+"ms");
+
     }
 
 
