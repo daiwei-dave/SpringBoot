@@ -1,11 +1,18 @@
-2017-03-20 16:17:44,670  INFO Application:48 ---- Starting Application on DESKTOP-I7PVE02 with PID 43060 (G:\SpringBoot-Learning\Chapter4-2-4\target\classes started by daiwei in G:\SpringBoot-Learning)
-2017-03-20 16:17:44,670 DEBUG Application:51 ---- Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
-2017-03-20 16:17:44,670  INFO Application:666 ---- No active profile set, falling back to default profiles: default
-2017-03-20 16:17:48,661  INFO Application:57 ---- Started Application in 4.683 seconds (JVM running for 5.315)
-2017-03-20 16:19:40,189  INFO WebLogAspect:50 ---- URL : http://localhost:8080/hello
-2017-03-20 16:20:47,158  INFO WebLogAspect:51 ---- HTTP_METHOD : GET
-2017-03-20 16:20:53,493  INFO WebLogAspect:52 ---- IP : 0:0:0:0:0:0:0:1
-2017-03-20 16:20:57,577  INFO WebLogAspect:53 ---- CLASS_METHOD : com.didispace.web.HelloController.hello
-2017-03-20 16:21:24,563  INFO WebLogAspect:54 ---- ARGS : [didi]
-2017-03-20 16:22:35,107  INFO WebLogAspect:61 ---- RESPONSE : Hello didi
-2017-03-20 16:22:51,551  INFO WebLogAspect:62 ---- SPEND TIME : 212272
+2018-01-22 10:55:46,015  INFO Application:48 ---- Starting Application on DESKTOP-I7PVE02 with PID 58996 (G:\SpringBoot-Learning\Chapter4-2-4\target\classes started by daiwei in G:\SpringBoot-Learning)
+2018-01-22 10:55:46,021 DEBUG Application:51 ---- Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2018-01-22 10:55:46,021  INFO Application:666 ---- No active profile set, falling back to default profiles: default
+2018-01-22 10:55:50,410  INFO Application:57 ---- Started Application in 5.182 seconds (JVM running for 6.039)
+2018-01-22 10:58:11,818  INFO WebLogAspect:52 ---- URL : http://localhost:8050/hello
+2018-01-22 10:58:11,818  INFO WebLogAspect:53 ---- HTTP_METHOD : GET
+2018-01-22 10:58:11,819  INFO WebLogAspect:54 ---- IP : 0:0:0:0:0:0:0:1
+2018-01-22 10:58:11,821  INFO WebLogAspect:55 ---- CLASS_METHOD : com.didispace.web.HelloController.hello
+2018-01-22 10:58:11,821  INFO WebLogAspect:57 ---- ARGS : [daiwei]
+2018-01-22 10:58:11,838  INFO WebLogAspect:64 ---- RESPONSE : Hello daiwei
+2018-01-22 10:58:11,838  INFO WebLogAspect:65 ---- SPEND TIME : 20
+2018-01-22 10:59:28,160  INFO WebLogAspect:52 ---- URL : http://localhost:8050/hello
+2018-01-22 10:59:36,794  INFO WebLogAspect:53 ---- HTTP_METHOD : GET
+2018-01-22 10:59:39,562  INFO WebLogAspect:54 ---- IP : 0:0:0:0:0:0:0:1
+2018-01-22 10:59:42,476  INFO WebLogAspect:55 ---- CLASS_METHOD : com.didispace.web.HelloController.hello
+2018-01-22 11:00:51,825  INFO WebLogAspect:57 ---- ARGS : [daiwei]
+2018-01-22 11:01:25,523  INFO WebLogAspect:64 ---- RESPONSE : Hello daiwei
+2018-01-22 11:01:40,084  INFO WebLogAspect:65 ---- SPEND TIME : 180540

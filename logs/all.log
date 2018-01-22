@@ -1,39 +1,46 @@
-2017-03-20 16:17:44,670  INFO Application:48 - Starting Application on DESKTOP-I7PVE02 with PID 43060 (G:\SpringBoot-Learning\Chapter4-2-4\target\classes started by daiwei in G:\SpringBoot-Learning)
-2017-03-20 16:17:44,670 DEBUG Application:51 - Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
-2017-03-20 16:17:44,670  INFO Application:666 - No active profile set, falling back to default profiles: default
-2017-03-20 16:17:44,732  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73332124: startup date [Mon Mar 20 16:17:44 GMT+08:00 2017]; root of context hierarchy
-2017-03-20 16:17:45,326  INFO Version:17 - HV000001: Hibernate Validator 5.2.2.Final
-2017-03-20 16:17:45,909  INFO DefaultListableBeanFactory:839 - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
-2017-03-20 16:17:47,060  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8080 (http)
-2017-03-20 16:17:47,091  INFO StandardService:180 - Starting service Tomcat
-2017-03-20 16:17:47,107  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.30
-2017-03-20 16:17:47,234  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
-2017-03-20 16:17:47,235  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2503 ms
-2017-03-20 16:17:47,735  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
-2017-03-20 16:17:47,750  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-03-20 16:17:47,750  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-03-20 16:17:47,750  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-03-20 16:17:47,750  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
-2017-03-20 16:17:48,190  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73332124: startup date [Mon Mar 20 16:17:44 GMT+08:00 2017]; root of context hierarchy
-2017-03-20 16:17:48,286  INFO RequestMappingHandlerMapping:527 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.didispace.web.HelloController.hello(java.lang.String)
-2017-03-20 16:17:48,286  INFO RequestMappingHandlerMapping:527 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-03-20 16:17:48,286  INFO RequestMappingHandlerMapping:527 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-03-20 16:17:48,333  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-20 16:17:48,333  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-20 16:17:48,396  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-20 16:17:48,567  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
-2017-03-20 16:17:48,614  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
-2017-03-20 16:17:48,630  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
-2017-03-20 16:17:48,646  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
-2017-03-20 16:17:48,661  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8080 (http)
-2017-03-20 16:17:48,661  INFO Application:57 - Started Application in 4.683 seconds (JVM running for 5.315)
-2017-03-20 16:18:52,894  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-03-20 16:18:52,894  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
-2017-03-20 16:18:52,919  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
-2017-03-20 16:19:40,189  INFO WebLogAspect:50 - URL : http://localhost:8080/hello
-2017-03-20 16:20:47,158  INFO WebLogAspect:51 - HTTP_METHOD : GET
-2017-03-20 16:20:53,493  INFO WebLogAspect:52 - IP : 0:0:0:0:0:0:0:1
-2017-03-20 16:20:57,577  INFO WebLogAspect:53 - CLASS_METHOD : com.didispace.web.HelloController.hello
-2017-03-20 16:21:24,563  INFO WebLogAspect:54 - ARGS : [didi]
-2017-03-20 16:22:35,107  INFO WebLogAspect:61 - RESPONSE : Hello didi
-2017-03-20 16:22:51,551  INFO WebLogAspect:62 - SPEND TIME : 212272
+2018-01-22 10:55:46,015  INFO Application:48 - Starting Application on DESKTOP-I7PVE02 with PID 58996 (G:\SpringBoot-Learning\Chapter4-2-4\target\classes started by daiwei in G:\SpringBoot-Learning)
+2018-01-22 10:55:46,021 DEBUG Application:51 - Running with Spring Boot v1.3.2.RELEASE, Spring v4.2.4.RELEASE
+2018-01-22 10:55:46,021  INFO Application:666 - No active profile set, falling back to default profiles: default
+2018-01-22 10:55:46,203  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@83dc97: startup date [Mon Jan 22 10:55:46 GMT+08:00 2018]; root of context hierarchy
+2018-01-22 10:55:46,777  INFO Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2018-01-22 10:55:47,402  INFO DefaultListableBeanFactory:839 - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2018-01-22 10:55:48,622  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8050 (http)
+2018-01-22 10:55:48,676  INFO StandardService:180 - Starting service Tomcat
+2018-01-22 10:55:48,677  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.30
+2018-01-22 10:55:48,868  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+2018-01-22 10:55:48,869  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2674 ms
+2018-01-22 10:55:49,471  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 10:55:49,475  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 10:55:49,475  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 10:55:49,475  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 10:55:49,475  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 10:55:49,934  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@83dc97: startup date [Mon Jan 22 10:55:46 GMT+08:00 2018]; root of context hierarchy
+2018-01-22 10:55:50,033  INFO RequestMappingHandlerMapping:527 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.didispace.web.HelloController.hello(java.lang.String)
+2018-01-22 10:55:50,035  INFO RequestMappingHandlerMapping:527 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 10:55:50,036  INFO RequestMappingHandlerMapping:527 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 10:55:50,073  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 10:55:50,073  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 10:55:50,123  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 10:55:50,299  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-22 10:55:50,355  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8050"]
+2018-01-22 10:55:50,360  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8050"]
+2018-01-22 10:55:50,379  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-01-22 10:55:50,393  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8050 (http)
+2018-01-22 10:55:50,410  INFO Application:57 - Started Application in 5.182 seconds (JVM running for 6.039)
+2018-01-22 10:58:11,715  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-22 10:58:11,715  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-22 10:58:11,752  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-01-22 10:58:11,818  INFO WebLogAspect:52 - URL : http://localhost:8050/hello
+2018-01-22 10:58:11,818  INFO WebLogAspect:53 - HTTP_METHOD : GET
+2018-01-22 10:58:11,819  INFO WebLogAspect:54 - IP : 0:0:0:0:0:0:0:1
+2018-01-22 10:58:11,821  INFO WebLogAspect:55 - CLASS_METHOD : com.didispace.web.HelloController.hello
+2018-01-22 10:58:11,821  INFO WebLogAspect:57 - ARGS : [daiwei]
+2018-01-22 10:58:11,838  INFO WebLogAspect:64 - RESPONSE : Hello daiwei
+2018-01-22 10:58:11,838  INFO WebLogAspect:65 - SPEND TIME : 20
+2018-01-22 10:59:28,160  INFO WebLogAspect:52 - URL : http://localhost:8050/hello
+2018-01-22 10:59:36,794  INFO WebLogAspect:53 - HTTP_METHOD : GET
+2018-01-22 10:59:39,562  INFO WebLogAspect:54 - IP : 0:0:0:0:0:0:0:1
+2018-01-22 10:59:42,476  INFO WebLogAspect:55 - CLASS_METHOD : com.didispace.web.HelloController.hello
+2018-01-22 11:00:51,825  INFO WebLogAspect:57 - ARGS : [daiwei]
+2018-01-22 11:01:25,523  INFO WebLogAspect:64 - RESPONSE : Hello daiwei
+2018-01-22 11:01:40,084  INFO WebLogAspect:65 - SPEND TIME : 180540
