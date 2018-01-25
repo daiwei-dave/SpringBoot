@@ -6,11 +6,14 @@ import com.aliyun.oss.model.OSSObject;
 import com.aliyun.oss.model.ObjectMetadata;
 import com.aliyun.oss.model.PutObjectResult;
 import org.apache.log4j.Logger;
+import org.springframework.util.StringUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.net.URL;
+import java.util.Date;
 
 /**
  * Created by daiwei on 2018/1/25.
@@ -30,6 +33,8 @@ public class AliyunOSSClientUtil {
     private static String BACKET_NAME;
     //阿里云API的文件夹名称
     private static String FOLDER;
+    // 文件存储目录
+    private static String filedir = "";
     //初始化属性
     static{
         ENDPOINT = OSSClientConstants.ENDPOINT;
@@ -196,14 +201,22 @@ public class AliyunOSSClientUtil {
     public static void main(String[] args) {
         //初始化OSSClient
         OSSClient ossClient=AliyunOSSClientUtil.getOSSClient();
+        // 设置URL过期时间为10年  3600l* 1000*24*365*10
+        Date expiration = new Date(new Date().getTime() + 3600l * 1000 * 24 * 365 * 10);
+        // 生成URL
         //上传文件
         String files="D:\\image\\dgfdsg.PNG";
         String[] file=files.split(",");
         for(String filename:file){
             //System.out.println("filename:"+filename);
             File filess=new File(filename);
-            String md5key = AliyunOSSClientUtil.uploadObject2OSS(ossClient, filess, BACKET_NAME, FOLDER);
+           String md5key = AliyunOSSClientUtil.uploadObject2OSS(ossClient, filess, BACKET_NAME, FOLDER);
             logger.info("上传后的文件MD5数字唯一签名:" + md5key);
+
+            //返回图片url地址
+            final URL url = ossClient.generatePresignedUrl(BACKET_NAME, "img/dgfdsg.PNG", expiration);
+            System.out.println(url);
+
             //上传后的文件MD5数字唯一签名:40F4131427068E08451D37F02021473A
         }
 
