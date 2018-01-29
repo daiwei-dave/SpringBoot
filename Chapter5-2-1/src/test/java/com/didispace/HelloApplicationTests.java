@@ -5,6 +5,7 @@ import com.didispace.rabbit.Sender;
 import com.didispace.rabbit.many.NeoSender;
 import com.didispace.rabbit.many.NeoSender2;
 import com.didispace.rabbit.object.ObjectSender;
+import com.didispace.rabbit.topic.TopicSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,10 @@ public class HelloApplicationTests {
 
 	@Autowired
 	private ObjectSender objectSender;
+
+
+	@Autowired
+	private TopicSender topicSender;
 
 	@Test
 	public void hello() throws Exception {
@@ -70,6 +75,23 @@ public class HelloApplicationTests {
 		user.setName("neo");
 		user.setPass("123456");
 		objectSender.send(user);
+	}
+
+	//以下为Topic Exchange。发送send1会匹配到topic.#和topic.message 两个Receiver，都可以收到消息。发送send2只有topic.#可以匹配，只有Receiver2监听到消息
+
+	@Test
+	public void topic() throws Exception {
+		topicSender.send();
+	}
+
+	@Test
+	public void topic1() throws Exception {
+		topicSender.send1();
+	}
+
+	@Test
+	public void topic2() throws Exception {
+		topicSender.send2();
 	}
 
 
