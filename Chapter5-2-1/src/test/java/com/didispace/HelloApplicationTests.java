@@ -2,6 +2,7 @@ package com.didispace;
 
 import com.didispace.model.User;
 import com.didispace.rabbit.Sender;
+import com.didispace.rabbit.fanout.FanoutSender;
 import com.didispace.rabbit.many.NeoSender;
 import com.didispace.rabbit.many.NeoSender2;
 import com.didispace.rabbit.object.ObjectSender;
@@ -30,6 +31,10 @@ public class HelloApplicationTests {
 
 	@Autowired
 	private ObjectSender objectSender;
+
+
+	@Autowired
+	private FanoutSender fanoutSender;
 
 
 	@Autowired
@@ -76,6 +81,20 @@ public class HelloApplicationTests {
 		user.setPass("123456");
 		objectSender.send(user);
 	}
+
+	/**
+	 * Fanout Exchange
+	 * <P>
+	 *     Fanout 就是我们熟悉的广播模式或者订阅模式，给Fanout交换机发送消息，绑定了这个交换机的所有队列都收到这个消息。
+	 * </P>
+	 * @throws Exception
+	 */
+	@Test
+	public void fanoutSender() throws Exception {
+		fanoutSender.send();
+	}
+
+
 
 	//以下为Topic Exchange。发送send1会匹配到topic.#和topic.message 两个Receiver，都可以收到消息。发送send2只有topic.#可以匹配，只有Receiver2监听到消息
 
