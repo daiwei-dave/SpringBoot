@@ -2,6 +2,7 @@ package com.didispace;
 
 import com.didispace.rabbit.Sender;
 import com.didispace.rabbit.many.NeoSender;
+import com.didispace.rabbit.many.NeoSender2;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,10 @@ public class HelloApplicationTests {
 	@Autowired
 	private NeoSender neoSender;
 
+
+	@Autowired
+	private NeoSender2 neoSender2;
+
 	@Test
 	public void hello() throws Exception {
 		sender.send();
@@ -34,5 +39,20 @@ public class HelloApplicationTests {
 			neoSender.send(i);
 		}
 	}
+
+
+	/**
+	 * 多对多发送
+	 * @throws Exception
+	 * 和一对多一样，接收端仍然会均匀接收到消息
+	 */
+	@Test
+	public void manyToMany() throws Exception {
+		for (int i=0;i<10;i++){
+			neoSender.send(i);
+			neoSender2.send(i);
+		}
+	}
+
 
 }
