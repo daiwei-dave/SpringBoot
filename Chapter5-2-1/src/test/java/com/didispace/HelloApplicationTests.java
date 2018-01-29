@@ -1,8 +1,10 @@
 package com.didispace;
 
+import com.didispace.model.User;
 import com.didispace.rabbit.Sender;
 import com.didispace.rabbit.many.NeoSender;
 import com.didispace.rabbit.many.NeoSender2;
+import com.didispace.rabbit.object.ObjectSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,10 @@ public class HelloApplicationTests {
 
 	@Autowired
 	private NeoSender2 neoSender2;
+
+
+	@Autowired
+	private ObjectSender objectSender;
 
 	@Test
 	public void hello() throws Exception {
@@ -52,6 +58,18 @@ public class HelloApplicationTests {
 			neoSender.send(i);
 			neoSender2.send(i);
 		}
+	}
+
+	/**
+	 * 对象的发送和接收
+	 * @throws Exception
+	 */
+	@Test
+	public void sendOject() throws Exception {
+		User user=new User();
+		user.setName("neo");
+		user.setPass("123456");
+		objectSender.send(user);
 	}
 
 
