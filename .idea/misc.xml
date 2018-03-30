@@ -45,6 +45,7 @@
         <option value="$PROJECT_DIR$/com-gitee-entity/pom.xml" />
         <option value="$PROJECT_DIR$/com-gitee-service/pom.xml" />
         <option value="$PROJECT_DIR$/datasource-share-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/redis/pom.xml" />
       </list>
     </option>
   </component>
