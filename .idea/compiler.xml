@@ -42,8 +42,10 @@
         <module name="datasource-share-sdk" />
         <module name="demo" />
         <module name="demo (1)" />
+        <module name="message-push" />
         <module name="rabbitmq-hello" />
         <module name="redis" />
+        <module name="springboot-rop" />
         <module name="springboot-shiro" />
         <module name="springbootshiro" />
         <module name="SpringBootWithSwagger" />
@@ -87,8 +89,11 @@
       <module name="datasource-share-sdk" target="1.5" />
       <module name="demo" target="1.8" />
       <module name="demo (1)" target="1.8" />
+      <module name="message-push" target="1.8" />
       <module name="rabbitmq-hello" target="1.7" />
       <module name="redis" target="1.8" />
+      <module name="springboot-es" target="1.8" />
+      <module name="springboot-rop" target="1.7" />
       <module name="springboot-shiro" target="1.7" />
       <module name="springbootshiro" target="1.5" />
       <module name="SpringBootWithSwagger" target="1.7" />
