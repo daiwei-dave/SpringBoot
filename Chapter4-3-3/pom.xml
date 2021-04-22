@@ -18,7 +18,7 @@
     <maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
     <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     <org.mybatis.generator.version>1.3.2</org.mybatis.generator.version>
-    <mybatis.version>3.2.6</mybatis.version>
+    <mybatis.version>3.5.6</mybatis.version>
     <mybatis-spring.version>1.3.0</mybatis-spring.version>
     <mybatise.pagehelper.version>3.6.0</mybatise.pagehelper.version>
     <redis.version>2.8.0</redis.version>
