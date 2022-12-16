@@ -17,7 +17,7 @@
 
 
     <!-- spring version -->
-    <spring.version>4.1.6.RELEASE</spring.version>
+    <spring.version>5.2.20.RELEASE</spring.version>
 
     <!--aop相关-->
     <aspectj.version>1.7.4</aspectj.version>
